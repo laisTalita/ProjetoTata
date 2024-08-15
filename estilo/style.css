@@ -64,6 +64,7 @@ li>a{
     cursor: pointer;
 }
 p{
+    text-indent: 1em;
     color: var(--slate);
     font-size: 1.2em;
     line-height: 1.5;
@@ -234,8 +235,11 @@ section {
     width: 85% ;
     background-color:var(--coconut);
     border:  3px double #4d4523d7;
-    padding: 15px  ;
+    padding: 2px  ;
     border-radius: 10px;
+    overflow: auto;
+    max-height: 250px;
+    
 }
 .projeto{
     margin-left: auto;
@@ -243,11 +247,10 @@ section {
 .projetos{
     margin-right: auto;
 }
-.projeto img, .projetos img{
+.proj img{
     background-color: #212116;
     width: 56%;
     min-width: 240px;
-    height: 170px;
     min-height: 100px; 
     margin: 5px;  
     float: left;
@@ -271,7 +274,7 @@ section {
 .proj button{
  border: 1px solid var(--oliver) ;
  background:none;
- padding: 2px 3px;
+ padding: 2px 2px;
  cursor: pointer;
 }
 .proj button:hover{
@@ -279,10 +282,11 @@ section {
 }
 .proj i{
     padding: 3px;
-    font-size: 1.8em;
+    font-size: 1.7em;
 }
 .proj button >p{
-    font-weight: 400;
+    font-weight: 500;
+    
 }
 #projetos h2{
     margin-right: auto;
