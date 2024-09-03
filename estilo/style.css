@@ -232,13 +232,14 @@ section {
     background-color: #dedbb9;
 }
 .projetos ,.projeto{
-    width: 85% ;
+    width: 90% ;
     background-color:var(--coconut);
     border:  3px double #4d4523d7;
     padding: 2px  ;
     border-radius: 10px;
     overflow: auto;
     max-height: 250px;
+    min-width: 150px;
     
 }
 .projeto{
@@ -249,9 +250,9 @@ section {
 }
 .proj img{
     background-color: #212116;
-    width: 56%;
-    min-width: 240px;
-    min-height: 100px; 
+    width: 56%; 
+    min-width: 300px;
+    max-height: 250px; 
     margin: 5px;  
     float: left;
 } 
@@ -286,7 +287,7 @@ section {
 }
 .proj button >p{
     font-weight: 500;
-    
+   
 }
 #projetos h2{
     margin-right: auto;
