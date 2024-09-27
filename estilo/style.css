@@ -90,6 +90,9 @@ h3{
     color: var(--slate);
 }
  @media (max-width:710px){
+    #sobre{
+        border: none;
+    }
     p,li> a{
         font-size: 18px;
         line-height: 1;
