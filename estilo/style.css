@@ -34,8 +34,8 @@ nav{
     font-family:var(--textI);
     position: absolute;
     left: 6%; 
-    font-size: 1.6em;
-    top:13px ;
+    font-size: 1.5em;
+    top:18px ;
     color: var(--coconut);
 }
 .links{
@@ -142,29 +142,28 @@ section {
 #sobre{
     display: flex;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 120px;
     margin-bottom: 20%;
-    background-color:#dedbb9;
-    box-shadow:  1px 1px 20px 1px #71330720;
+    border: 5px  double #dedbb9;
+    background-image:linear-gradient(to bottom,var(--coconut),var(--barlap), var(--coconut) ) ;
+
 }
 .sobre{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    border: 5px  double #dedbb9;
-    border-radius: 5px 20px;
-    padding: 45px ;
-    width: 55%;
-    background-color: var(--barlap);
+    align-items: left;
+    padding: 40px ;
+    width: 70%;
+    height: 30vh;
 }
-#sobre .logo{
+/* #sobre .logo{
     font-size: 2em;
     margin-top: -30px;
     height: 30px;
     color: var(--slate);
     margin-bottom: 30px;
-}
+} */
 .lais img{
     margin-left: 10px;
     float:right ;
