@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 :root{
-    --oliver: #4d4523; 
-    --barlap: #d2b582ec; 
-    --coconut:#d6d2abec;
-    --cinnamon:#75370b; 
+    --oliver: #47401e; 
+    --barlap: #d2b582fa; 
+    --coconut:#d6d2aba5;
+    --cinnamon:#6b330b; 
     --slate: #212116; 
     --textI: "Abel", sans-serif ;
     --textS: "Inconsolata", monospace;
@@ -76,7 +76,7 @@ hr{
     border: none;
     height: 1px;
     margin: 90px 1px 2px 10px;
-    width: 25%;
+    width: 28%;
     background-image: linear-gradient(to right,var(--oliver), transparent) ;
 } 
 h2 {
@@ -89,42 +89,7 @@ h3{
     font-family: var(--textI);
     color: var(--slate);
 }
- @media (max-width:710px){
-    #sobre{
-        border: none;
-    }
-    p,li> a{
-        font-size: 18px;
-        line-height: 1;
-       letter-spacing: 0.5;
-    }
-    h1,h2{
-        font-size: 1.3em;
-    }
-   
-    #mnu{
-        display:inline;
-    }
-    .links {
-        text-align: right;
-        position: absolute;
-        width: 150px;
-        top: 32px;
-        right: 14px;
-        background-color: #212116;
-        display: none;
-    }
-    .links.show{
-        display: block;
-    }
-    .links li{
-        margin: 6px 5px;
-    }   
-    .cont{
-        width: 210px;
-    }
- 
-}    
+
 @media (max-width:1020px){
 #f1{
     display: flex;
@@ -135,7 +100,7 @@ h3{
 }
 
  .links li:hover{
-    background-color: rgba(0, 0, 0, 0.146);
+    background-color: rgba(0, 0, 0, 0.259);
  }
 section {
     margin: 0px auto;
@@ -145,20 +110,22 @@ section {
 #sobre{
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 13%;
     margin-bottom: 20%;
-    border: 5px  double #dedbb9;
+    border: 1px solid var(--coconut) ;
+    outline: 2px dashed var(--coconut);      
+    outline-offset: 6px; 
     background-image:linear-gradient(to bottom,var(--coconut),var(--barlap), var(--coconut) ) ;
 
 }
-.sobre{
+#sobre div{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: left;
-    padding: 40px ;
+    padding: 20px ;
     width: 70%;
-    height: 30vh;
+    height: 40vh;
 }
 /* #sobre .logo{
     font-size: 2em;
@@ -177,14 +144,14 @@ section {
 }
 #tecnologias{
     background-color:#dedbb9;
-    box-shadow:  1px 1px 20px 1px #71330720;
+    box-shadow:  1px 1px 5px 1px #0000002b;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 } 
 #listas{
-    border: 1px solid #7575730e;
+    border: 1px solid #ffffff5d;
     margin-top: 43px;
     display: flex;
     flex-wrap: wrap;
@@ -223,7 +190,7 @@ section {
 }
 .proj{
     margin: 1%;
-    box-shadow: 1px 2px 40px 12px #13120e0b;
+    box-shadow: inset 1px 2px 40px 12px #13120e1a;
     padding: 5px;
     width: 65%;
     display: flex;
@@ -231,7 +198,7 @@ section {
     flex-direction: column;
     align-items: center;  
     border-radius: 20px;
-    background-color: #dedbb9;
+    background-color: var(--coconut);
 }
 .projetos ,.projeto{
     width: 90% ;
@@ -240,7 +207,7 @@ section {
     padding: 2px  ;
     border-radius: 10px;
     overflow: auto;
-    max-height: 250px;
+    max-height: 240px;
     min-width: 150px;
     
 }
@@ -281,14 +248,16 @@ section {
  cursor: pointer;
 }
 .proj button:hover{
-    background-color:#4d452365;
+    background-color:#4d4523be;
 }
 .proj i{
     padding: 3px;
     font-size: 1.7em;
 }
-.proj button >p{
+ button >p{
     font-weight: 500;
+    text-align: center;
+    padding: 2px 14px 2px 1px;
    
 }
 #projetos h2{
@@ -343,9 +312,9 @@ input[type=text]{
 
 }
 textarea{
- 
-    width: 68%;
-    min-width: 200px; 
+    width: 60%;
+    max-width: 400px;
+    max-height: 300px;
     margin-bottom: 30px;
 }
 
@@ -384,3 +353,43 @@ footer .Redes {
     color: var(--coconut);
 }
 
+@media (max-width:710px){
+    #sobre{
+        border: none;
+    }
+    p,li> a{
+        font-size: 18px;
+        line-height: 1;
+       letter-spacing: 0.5;
+    }
+    h1,h2{
+        font-size: 1.3em;
+    }
+   
+    #mnu{
+        display:inline;
+    }
+    .links {
+        text-align: right;
+        position: absolute;
+        width: 150px;
+        top: 32px;
+        right: 14px;
+        background-color: #212116;
+        display: none;
+    }
+    .links.show{
+        display: block;
+    }
+    .links li{
+        margin: 6px 5px;
+    }   
+    .cont{
+        width: 210px;
+    }
+    textarea{
+        max-width: 250px;
+        max-height: 200px;
+    }
+ 
+}    
