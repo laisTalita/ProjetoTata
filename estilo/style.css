@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 :root{
-    --oliver: #47401e; 
-    --barlap: #d2b582fa; 
-    --coconut:#d6d2aba5;
+    --oliver: #4e461e; 
+    --barlap: #d2b582dc; 
+    --coconut:#dddabfa5;
     --cinnamon:#6b330b; 
     --slate: #212116; 
     --textI: "Abel", sans-serif ;
@@ -34,25 +34,28 @@ nav{
     font-family:var(--textI);
     position: absolute;
     left: 6%; 
-    font-size: 1.5em;
+    font-size: 1.6em;
     top:18px ;
     color: var(--coconut);
 }
 .links{
     display: flex;
-    margin-top: 18px;
+    margin-top: 14px;
     margin-right: 10px;
 }
 .links>li{
     list-style-type: none;
     margin: 4px;
     padding: 3px;
+
 }
 li>a{
-    font-size:1.3em;
+
+    font-size:1.5em;
     color: var(--coconut);
     text-decoration: none;
-    padding: 3px 10px;  
+    padding: 6px 10px;  
+
 }
 #mnu{
     color: var(--coconut);
@@ -107,14 +110,27 @@ section {
     padding: 30px;
     min-width: 300px;
 }
+
+@keyframes animacao-borda-baixo {
+    from{
+        outline: 2px solid var(--coconut);
+    }
+    to{
+        outline: 2px solid rgba(255, 255, 255, 0.456);
+
+    }
+    
+}
+
+
 #sobre{
     display: flex;
     justify-content: center;
-    margin-top: 13%;
+    margin-top: 150px;
     margin-bottom: 20%;
-    border: 1px solid var(--coconut) ;
-    outline: 2px dashed var(--coconut);      
-    outline-offset: 6px; 
+    outline-offset: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.39) ;
+    animation:animacao-borda-baixo 5s 2s infinite alternate  ;
     background-image:linear-gradient(to bottom,var(--coconut),var(--barlap), var(--coconut) ) ;
 
 }
@@ -192,7 +208,7 @@ section {
     margin: 1%;
     box-shadow: inset 1px 2px 40px 12px #13120e1a;
     padding: 5px;
-    width: 65%;
+    width: 62%;
     display: flex;
     min-width: 340px;
     flex-direction: column;
@@ -246,6 +262,7 @@ section {
  background:none;
  padding: 2px 2px;
  cursor: pointer;
+ transition: background-color 0.5s ease; 
 }
 .proj button:hover{
     background-color:#4d4523be;
@@ -312,7 +329,7 @@ input[type=text]{
 
 }
 textarea{
-    width: 60%;
+    min-width: 60%;
     max-width: 400px;
     max-height: 300px;
     margin-bottom: 30px;
@@ -388,8 +405,20 @@ footer .Redes {
         width: 210px;
     }
     textarea{
+        
         max-width: 250px;
         max-height: 200px;
     }
+   .projeto,.projetos{
+        margin: auto;
+    }
+    .proj button{
+        background-color: white;
+
+    }
  
+    .proj{
+
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0)5%, rgba(31, 34, 36, 0.66) 15%,var(--coconut));
+    }
 }    
