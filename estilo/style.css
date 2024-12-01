@@ -48,7 +48,6 @@ nav{
     margin: 4px;
     padding: 3px;
 } 
-
 li>a{
     font-size:1.5em;
     color: var(--coconut);
@@ -64,7 +63,6 @@ li>a{
     display: none;
     cursor: pointer;
 }
-
 p{
     text-indent: 1em;
     color: var(--slate);
@@ -73,7 +71,6 @@ p{
     letter-spacing: 0.3;
     padding: 2px;
 }
-
 hr{
     border: none;
     height: 1px;
@@ -86,7 +83,6 @@ h2 {
     font-family: var(--textI);
     color: var(--oliver);    
 }
-
 h3{
     font-size: 1.2em;
     font-family: var(--textI);
@@ -99,21 +95,18 @@ h3{
     align-items: center; 
 }
 }
-
 section {
     margin: 0px auto;
     padding: 30px;
     min-width: 300px;
 }
-
 @keyframes animacao-borda-baixo {
     from{
         outline: 1px solid var(--coconut);
     }
     to{
         outline: 2px solid rgba(255, 255, 255, 0.609);
-    }
-    
+    }   
 }
 #sobre{
     display: flex;
@@ -133,7 +126,7 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    margin: 10px ;
+    margin: 8px ;
     width: 50%;
     min-height: 40vh;
 }
@@ -165,6 +158,18 @@ input[type="submit"] {
     height: auto;
     background-size: cover;
     border-radius: 50%;
+}
+@media (max-width: 700px) {
+    #DivDaImg > img{
+        display: none;
+    }
+    #paragrafo{
+        width: 80%;
+    }
+    #paragrafo button{
+        margin: 20px auto;
+        padding: 3px;
+    }
 }
 #tecnologias{
     box-shadow:  1px 1px 2px 1px #00000009;
@@ -250,7 +255,6 @@ input[type="submit"] {
     border-radius: 20px;
     background-color: var(--coconut);
 }
-
 .projetos ,.projeto{
     width: 99% ;
     background-color:var(--coconut);
@@ -259,13 +263,11 @@ input[type="submit"] {
     border-radius: 10px;
     overflow: auto;
     max-height: 240px;
-    min-width: 150px;
-    
+    min-width: 150px;   
 }
 .projetos ,.projeto{
     margin: 20px 10px;
 }
-
 .projeto{
     margin-left: auto;
 }
@@ -283,7 +285,6 @@ input[type="submit"] {
 .projeto img{
     float: right;
 }
-
 .esquerda,.direita{
     margin: 10px;
     padding: 10px;
@@ -315,8 +316,7 @@ input[type="submit"] {
     font-weight: 500;
     text-align: center;
     padding: 1px 14px 2px 1px;
-    font-size: 17px;
-   
+    font-size: 17px;  
 }
 #projetos h2{
     margin-right: 70%;
@@ -325,7 +325,6 @@ input[type="submit"] {
 .scroll{
     scroll-margin-top: 100px;
 }
-
 #contato{
     background-image: linear-gradient(to bottom, transparent 30%, #853e0c40);
     display: flex;
@@ -343,7 +342,6 @@ input[type="submit"] {
     border: 1px solid rgba(40, 40, 40, 0.129);
     box-shadow: 1px 1px  20px 1px var(--coconut);
 }
-
 .fil{
     border-style: none;
 }
@@ -364,16 +362,12 @@ input[type=text],input[type=email]{
     margin: 20px 20px 1px 2px;
     width: 25%;
     min-width: 170px;
-
 }
 textarea{
     min-width: 50%;
     max-width: 400px;
     max-height: 300px;
     margin-bottom: 30px;
-}
-label{
-    font-size: 1.2em;
 }
 ::placeholder{
     font-size: 1.2em; 
@@ -384,7 +378,6 @@ label{
     box-shadow: 9px 6px 3px rgba(0, 0, 0, 0.143);
     transition: background-color 0.6s ease, color 0.5s ease; 
 }
-
 footer {
     background-color: var(--cinnamon);
     color: var(--barlap);
@@ -400,7 +393,6 @@ footer .Redes {
     padding: 1px 10px;
     color: var(--coconut);
 }
-
 @media (max-width:710px){
     #sobre{
         border: none;
@@ -412,8 +404,7 @@ footer .Redes {
     }
     h1,h2{
         font-size: 1.3em;
-    }
-   
+    }  
     #mnu{
         display:inline;
     }
@@ -452,7 +443,6 @@ footer .Redes {
     .proj{
         background-image: linear-gradient(to bottom, rgb(0, 0, 0)5%, rgba(34, 40, 54, 0.565) 15%,var(--coconut));
     }
- 
     #sobre{
         margin-top: 15%;
     }
@@ -460,7 +450,6 @@ footer .Redes {
         width: 100%;
         z-index: 1;
     }
-   
 }    
 
 
