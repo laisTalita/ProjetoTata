@@ -6,7 +6,6 @@
       event.stopPropagation();
       ulMenu.classList.toggle('show');
   });
-
   document.addEventListener('click', function(event) {
       if (!ulMenu.contains(event.target) && event.target !== menuIcon && !menuIcon.contains(event.target)) {
           ulMenu.classList.remove('show');

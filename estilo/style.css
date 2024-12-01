@@ -47,15 +47,13 @@ nav{
     list-style-type: none;
     margin: 4px;
     padding: 3px;
+} 
 
-}
 li>a{
-
     font-size:1.5em;
     color: var(--coconut);
     text-decoration: none;
     padding: 6px 10px;  
-
 }
 #mnu{
     color: var(--coconut);
@@ -81,13 +79,14 @@ hr{
     height: 1px;
     margin: 90px 1px 2px 10px;
     width: 28%;
-    background-image: linear-gradient(to right,var(--oliver), transparent) ;
+    background-image: linear-gradient(to right,rgb(73, 2, 106), transparent) ;
 } 
 h2 {
     font-size: 1.4;
     font-family: var(--textI);
-    color: var(--oliver);
+    color: var(--oliver);    
 }
+
 h3{
     font-size: 1.2em;
     font-family: var(--textI);
@@ -100,9 +99,7 @@ h3{
     align-items: center; 
 }
 }
- .links li:hover{
-    background-color: rgba(0, 0, 0, 0.259);
- }
+
 section {
     margin: 0px auto;
     padding: 30px;
@@ -146,7 +143,7 @@ section {
 #paragrafo> h1{
     margin-bottom: 10px;
 }
-#paragrafo button{
+.but{
     margin-top: 50px;
     width: 20%;
     min-width: 124px;
@@ -155,8 +152,13 @@ section {
     font-size: 1.1em;
     background-color: #887a32d8 ;
     border-radius: 20px;
-    border: 1px solid var(--coconut);
+    border: 1px solid #3d3717af;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.157);
     color: var(--slate);
+    cursor: pointer;
+}
+input[type="submit"] {
+    padding: 3px ;
 }
 #DivDaImg >img{
     width: 100%;
@@ -172,7 +174,7 @@ section {
     justify-content: center;
 } 
 #listas{
-    border: 1px solid #ffffff5d;
+    border: 1px solid #aeabab48;
     margin-top: 43px;
     display: flex;
     flex-wrap: wrap;
@@ -183,13 +185,14 @@ section {
 } 
 .coluna{
     width: 26%;
-    min-width: 225px;
+    min-width: 300px;
     text-align: center;
     margin: 9px 1%;
 }
 .coluna>ul{
     list-style-type: none;
     padding: 0;
+    box-shadow: inset 1px 1px 8px 2px rgba(0, 0, 0, 0.044);
 }
 .coluna li{
     display: flex;
@@ -197,7 +200,7 @@ section {
     justify-content: center;
     padding: 8px;
     margin: 8px 2px;
-    box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.052);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.211);
 }
 .coluna i{
     font-size: 2.4em;
@@ -249,7 +252,7 @@ section {
 }
 
 .projetos ,.projeto{
-    width: 90% ;
+    width: 99% ;
     background-color:var(--coconut);
     border:  3px double #4d4523d7;
     padding: 2px  ;
@@ -294,14 +297,15 @@ section {
     margin: 10px;
 }
 .proj button{
- border: 1px solid white ;
- background:rgba(255, 255, 255, 0.482);
+ border: 1px solid rgb(255, 255, 255) ;
+ border-radius: 5px;
+ background:var(--barlap);
  padding: 2px 2px;
  cursor: pointer;
  transition: background-color 0.5s ease; 
 }
 .proj button:hover{
-    background-color:#4d4523be;
+    background-color:#7e4318c6;
 }
 .proj i{
     padding: 3px;
@@ -310,17 +314,18 @@ section {
  button >p{
     font-weight: 500;
     text-align: center;
-    padding: 2px 14px 2px 1px;
-    font-weight: bold;
-    font-size: 1.1em;
+    padding: 1px 14px 2px 1px;
+    font-size: 17px;
    
 }
 #projetos h2{
-    margin-right: auto;
+    margin-right: 70%;
+    margin-bottom: 10px;
 }
 .scroll{
     scroll-margin-top: 100px;
 }
+
 #contato{
     background-image: linear-gradient(to bottom, transparent 30%, #853e0c40);
     display: flex;
@@ -356,39 +361,29 @@ input[type=text],textarea,input[type=email]{
     border: 1px solid var(--oliver);
 }
 input[type=text],input[type=email]{
-    margin: 20px;
-    width: 30%;
+    margin: 20px 20px 1px 2px;
+    width: 25%;
     min-width: 170px;
 
 }
 textarea{
-    min-width: 60%;
+    min-width: 50%;
     max-width: 400px;
     max-height: 300px;
     margin-bottom: 30px;
 }
-
+label{
+    font-size: 1.2em;
+}
 ::placeholder{
-    font-size: 1.3em;
-    
+    font-size: 1.2em; 
 }
-input[type=submit]{
-    margin: 5px 0px 5px 2%;
-    padding: 4px;
-    min-width: 60px;
-    width: 20%;
-    background-color: transparent;
-    border: 1px solid var(--oliver);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 1em;
-}
-input[type=submit]:hover{
+.but:hover{
     background-color:var(--oliver);
     color: var(--coconut);
+    box-shadow: 9px 6px 3px rgba(0, 0, 0, 0.143);
+    transition: background-color 0.6s ease, color 0.5s ease; 
 }
-
 
 footer {
     background-color: var(--cinnamon);
@@ -410,7 +405,7 @@ footer .Redes {
     #sobre{
         border: none;
     }
-    p,li> a{
+    li> a{
         font-size: 18px;
         line-height: 1;
        letter-spacing: 0.5;
@@ -441,7 +436,6 @@ footer .Redes {
         width: 210px;
     }
     textarea{
-        
         max-width: 250px;
         max-height: 200px;
     }
@@ -449,14 +443,16 @@ footer .Redes {
         margin: auto;
     }
     .proj button{
-        background-color: white;
-
+        background-color: #f3f3f094;
+        border: 1px solid rgba(249, 248, 248, 0.789); 
+    }
+    .proj button:hover{
+        background-color:#262c4989;
+    }
+    .proj{
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0)5%, rgba(34, 40, 54, 0.565) 15%,var(--coconut));
     }
  
-    .proj{
-
-        background-image: linear-gradient(to bottom, rgb(0, 0, 0)5%, rgba(31, 34, 36, 0.66) 15%,var(--coconut));
-    }
     #sobre{
         margin-top: 15%;
     }
