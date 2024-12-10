@@ -56,7 +56,7 @@ li>a{
     padding: 6px 10px;  
 }
 .links li:hover{
-    background-color: #21211688;
+    background-color: #2121168d;
 }
 #mnu{
     color: var(--coconut);
@@ -341,7 +341,6 @@ input[type="submit"] {
     scroll-margin-top: 100px;
 }
 #contato{
-    background-image: linear-gradient(to bottom, transparent 30%, #853e0c40);
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -349,42 +348,60 @@ input[type="submit"] {
     padding-bottom: 120px;
 }
 .cont{
-    padding: 8px;
+    padding: 2px;
     text-align: center;
-    width: 50%;
+    width: 47%;
     min-width: 324px;
     background-color: var(--coconut);
     border: 1px solid rgba(40, 40, 40, 0.129);
+    border-radius: 30px 2px;
     box-shadow: 1px 1px  20px 1px var(--coconut);
 }
 .fil{
     border-style: none;
+    font-family: var(--textS);
 }
 #f1{
-    margin: 25px 1px ;
+    margin: 20px 1px 2px ;
 }
-#f2{
-    margin: 50px  20px 5px 2% ;
+#f1-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    margin: 30px;
 }
-input[type=text],textarea,input[type=email]{
-    border-radius: 10px;
-    padding: 4px;
-    background-color: transparent;
-    border: 1px solid var(--oliver);
+#f1-2 div{
+    margin-left: 4%;
 }
 input[type=text],input[type=email]{
-    margin: 20px 20px 1px 2px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--oliver);
+}
+input[type=text],input[type=email]{
+    margin: 2% 5% ;
     width: 25%;
     min-width: 170px;
 }
 textarea{
-    min-width: 50%;
-    max-width: 400px;
+    min-width: 56%;
+    max-width: 320px;
     max-height: 300px;
-    margin-bottom: 30px;
+    margin: 10px 2px 2px;
+    padding: 4%;
+    background-color: rgba(235, 232, 232, 0.274);
+    border: 1px solid rgba(0, 0, 0, 0.316);
 }
 ::placeholder{
-    font-size: 1.2em; 
+    font-size: 1.3em; 
+}
+.menor{
+    width: 25%;
+    padding: 1px;
+    font-size: 1em;
+    margin-top: 16px;
 }
 footer {
     background-color: var(--cinnamon);
@@ -397,18 +414,28 @@ footer .Redes {
     margin: 1px 40px;
 }
 .Redes a{
-    font-size:  1.3em;
-    padding: 1px 10px;
-    color: var(--coconut);
+    font-size:  1.6em;
+    padding: 1px 16px;
+    color: var(--cinnamon);
+    background: rgba(255, 255, 255, 0.272);
+    border: 1px solid var(--coconut);
+    border-radius: 50%;
+    margin: 1px 10px;
+}
+.Redes a:hover{
+    background-color: rgba(255, 255, 255, 0.569);
 }
 @media (max-width:610px){
     #sobre{
         border: none;
     }
     li> a{
-        font-size: 18px;
+        font-size: 1.3em;
         line-height: 1;
         letter-spacing: 0.5;
+    }
+    li>a:hover{
+        background-color: rgba(255, 255, 255, 0.151);
     }
     h1,h2{
         font-size: 1.3em;
@@ -442,8 +469,8 @@ footer .Redes {
         margin: auto;
     }
     .proj button{
-        background-color: #8b0b2bc4;
-        border: 1px solid rgba(216, 216, 216, 0.951); 
+        background-color: #a30d32cd;
+        border: 1px solid rgba(216, 216, 216, 0.957); 
     }
     .proj button:hover{
         background-color: var(--cinnamon) ;
@@ -455,6 +482,14 @@ footer .Redes {
         width: 100%;
         z-index: 1;
     }
+    #f1-2{
+        flex-direction:column ;
+        text-align: left;
+    }
+    .Redes a{
+        font-size: 1.3em;
+    }
+
 }    
 .gradiend-icone {
     background: linear-gradient( to bottom,#E76F00,#3983b5); 
