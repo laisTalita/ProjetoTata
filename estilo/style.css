@@ -275,7 +275,7 @@ input[type="submit"] {
     padding: 5px;
     width: 57%;
     display: flex;
-    min-width: 340px;
+    min-width: 650px;
     flex-direction: column;
     align-items: center;  
     border-radius: 20px;
@@ -351,7 +351,7 @@ input[type="submit"] {
     padding: 2px;
     text-align: center;
     width: 47%;
-    min-width: 324px;
+    min-width: 330px;
     background-color: var(--coconut);
     border: 1px solid rgba(40, 40, 40, 0.129);
     border-radius: 30px 2px;
@@ -362,28 +362,34 @@ input[type="submit"] {
     font-family: var(--textS);
 }
 #f1{
-    margin: 20px 1px 2px ;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
 }
 #f1-2{
+    font-size: 1.2em;
+    margin: 20px;
     display: flex;
+    flex-direction: column;
+    box-shadow: inset 12px 2px 23px rgba(0, 0, 0, 0.072);
+}
+#f1-2 .itens{
+    display: flex;
+    margin: 3% 2%;
+    gap: 7px 30px; 
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 1.2em;
-    margin: 30px;
-}
-#f1-2 div{
-    margin-left: 4%;
 }
 input[type=text],input[type=email]{
-    padding: 5px;
+    padding: 3px;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid var(--oliver);
 }
 input[type=text],input[type=email]{
-    margin: 2% 5% ;
-    width: 25%;
-    min-width: 170px;
+    margin: 2% 4% ;
+    width: 20%;
+    min-width: 130px;
 }
 textarea{
     min-width: 56%;
@@ -401,11 +407,10 @@ textarea{
     width: 25%;
     padding: 1px;
     font-size: 1em;
-    margin-top: 16px;
+    margin: 17px;
 }
 footer {
     background-color: var(--cinnamon);
-    color: var(--barlap);
     display: flex; 
 }
 footer .Redes {
@@ -417,15 +422,22 @@ footer .Redes {
     font-size:  1.6em;
     padding: 1px 16px;
     color: var(--cinnamon);
-    background: rgba(255, 255, 255, 0.272);
+    background: rgba(255, 255, 255, 0.569);
     border: 1px solid var(--coconut);
     border-radius: 50%;
-    margin: 1px 10px;
+    margin: 1px 7px;
 }
 .Redes a:hover{
-    background-color: rgba(255, 255, 255, 0.569);
+    background-color: rgba(255, 255, 255, 0.778);
 }
-@media (max-width:610px){
+@media (max-width:870px) {
+    .proj{
+        width: 80%;
+        min-width: 340px;
+    }
+    
+}
+@media (max-width:740px){
     #sobre{
         border: none;
     }
@@ -458,22 +470,13 @@ footer .Redes {
     .links li{
         margin: 6px 5px;
     }   
-    .cont{
-        width: 210px;
-    }
+   
     textarea{
         max-width: 250px;
         max-height: 200px;
     }
    .projeto,.projetos{
         margin: auto;
-    }
-    .proj button{
-        background-color: #a30d32cd;
-        border: 1px solid rgba(216, 216, 216, 0.957); 
-    }
-    .proj button:hover{
-        background-color: var(--cinnamon) ;
     }
     .proj{
         background-image: linear-gradient(to bottom, rgb(0, 0, 0)5%, rgba(34, 40, 54, 0.323) 15%,var(--coconut));
@@ -482,14 +485,12 @@ footer .Redes {
         width: 100%;
         z-index: 1;
     }
-    #f1-2{
-        flex-direction:column ;
-        text-align: left;
-    }
     .Redes a{
         font-size: 1.3em;
     }
-
+    .coluna i{
+        font-size: 2em;
+    }
 }    
 .gradiend-icone {
     background: linear-gradient( to bottom,#E76F00,#3983b5); 
