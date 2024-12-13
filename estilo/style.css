@@ -3,7 +3,7 @@
 :root{
     --oliver: #066339; 
     --coconut:#f0eee0f3;
-    --cinnamon: #7b241cf3; 
+    --cinnamon: #8b2d25f6; 
     --slate: #1f1f16f3; 
     --textI: "Abel", sans-serif ;
     --textS: "Inconsolata", monospace;
@@ -19,7 +19,7 @@ body{
     background-color: var(--coconut);
     background-image: url(../imagens/Folhas_PNG_Transparente_Sem_Fundo.png);
     background-attachment: fixed;
-    background-position: top center;
+    background-position: center center;
 
     color: var(--slate);
     font-family: var(--textS);
