@@ -3,7 +3,7 @@
 :root{
     --oliver: #066339; 
     --coconut:#f0eee0f3;
-    --cinnamon: #8b2d25f6; 
+    --cinnamon: #8b3925f5; 
     --slate: #1f1f16f3; 
     --textI: "Abel", sans-serif ;
     --textS: "Inconsolata", monospace;
@@ -11,7 +11,9 @@
 *{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
+
 html{
     box-shadow: inset 1px 10px 66px rgba(0, 0, 0, 0.016);
 }
@@ -20,7 +22,6 @@ body{
     background-image: url(../imagens/Folhas_PNG_Transparente_Sem_Fundo.png);
     background-attachment: fixed;
     background-position: center center;
-
     color: var(--slate);
     font-family: var(--textS);
 }
@@ -44,25 +45,27 @@ nav{
 }
 .links{
     display: flex;
-    margin-top: 14px;
+    margin-top: 20px;
     margin-right: 10px;
 }
 .links>li{
     list-style-type: none;
     margin: 1px;
-    padding: 4px;
-    background-color: rgba(142, 141, 141, 0.049);
+    padding: 2px;
 } 
+.links>li:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
 li>a{
     font-size:1.4em;
     color:var(--coconut);
     text-decoration: none;
-    padding: 2px 12px;  
+    margin: 2px 10px;  
 }
 #mnu{
-    color: var(--slate);
+    color: var(--coconut);
     position: absolute;
-    right: 20px;
+    right: 29px;
     top: 17px;
     font-size: 1.7em;
     display: none;
@@ -78,9 +81,9 @@ p{
 }
 hr{
     border: none;
-    height: 1px;
-    margin: 90px 1px 2px 10px;
-    width: 28%;
+    height: 4px;
+    margin: 83px 1px 1px 10px;
+    width: 30%;
     background-image: linear-gradient(to right, var(--oliver), transparent) ;
 } 
 h2 {
@@ -131,8 +134,8 @@ section {
     border: 1px solid rgba(248, 247, 247, 0.995) ;
     animation:animacao-borda-baixo 5s 2s infinite alternate  ;
     /*background-image:linear-gradient(to bottom,var(--coconut),var(--barlap), var(--coconut) ) ;*/
-    width: 100%;
-    padding: 10px;
+    width: 92%;
+    padding: 6px;
     justify-content: center;
     align-items: center;
     background-color: var(--coconut);
@@ -185,7 +188,6 @@ input[type="submit"] {
     box-shadow: 9px 6px 3px rgba(0, 0, 0, 0.071);
     transition: 0.4s;
 }
-
 .proj button >p:hover {
     color: var(--coconut);
 }
@@ -213,7 +215,7 @@ input[type="submit"] {
     align-items: center;
     justify-content: center;
     box-shadow:  0px 2px 20px 5px rgba(0, 0, 0, 0.034);
-    border-top: 2px solid #e6e4e4a8; /* Cinza claro */
+    border-top: 2px solid #e4e6e4b9; /* Cinza claro */
     background-color: var(--slate);
 } 
 #tecnologias h2{
@@ -225,13 +227,13 @@ input[type="submit"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    padding: 10px;
-    box-shadow: 1px 2px 12px 3px rgba(0, 0, 0, 0.097);
+    width: 90%;
+    padding: 2px;
+    box-shadow: 1px 2px 12px 3px rgba(0, 0, 0, 0.144);
     background-color: rgb(233, 227, 212);
 } 
 .coluna{
-    width: 26%;
+    width: 29%;
     min-width: 300px;
     text-align: center;
     margin: 9px 1%;  
@@ -246,33 +248,31 @@ input[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
-    margin: 10px 12px;
-    box-shadow:  1px 1px 8px 2px rgba(0, 0, 0, 0.101);
-
+    padding: 2px 1px;
+    margin: 10px 3px;
+    box-shadow:  1px 1px 8px 2px rgba(0, 0, 0, 0.038);
 }
 .coluna i{
-    font-size: 2.8em;
+    font-size: 2.7em;
     vertical-align: middle;
 }
 .coluna abbr{
     text-decoration: none;
     font-size: 1.3em;
     vertical-align: middle;
-    margin: 2px 7px;
+    margin: 5px;
 }
 .progress-bar-container {
-    width: 56%; 
+    width: 47%; 
     background-color: #1f090e2d; 
     border-radius: 10px;
     overflow: hidden;
     height: 20px;
-    margin: 10px 0;
+    margin: 16px 0px;
 }
 .progress-bar {
     height: 100%;
-   /* background-image: linear-gradient( to right, var(--slate),var(--cinnamon));*/
-   background-color: var(--cinnamon);
+    background-color: var(--cinnamon);
     border-radius: 10px; 
 }
 .percentage {
@@ -369,9 +369,9 @@ input[type="submit"] {
 .cont{
     padding: 2px;
     text-align: center;
-    width: 47%;
-    min-width: 370px;
-    background-color: var(--cinnamon);
+    width: 46%;
+    min-width: 500px;
+    background-color: var(--slate);
     border: 1px solid rgba(40, 40, 40, 0.129);
     border-radius: 30px 2px;
     box-shadow: 1px 1px  20px 1px var(--coconut);
@@ -387,7 +387,7 @@ input[type="submit"] {
 }
 #f1-2{
     font-size: 1.2em;
-    margin: 20px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     box-shadow: inset 12px 2px 23px rgba(0, 0, 0, 0.072);
@@ -399,23 +399,26 @@ input[type="submit"] {
     justify-content: center;
     flex-wrap: wrap;
 }
+#f1-2 legend{
+    font-size: 18px;
+}
 form input, form h2, form p, form label {
     color: var(--coconut);
 }
 input[type=text],input[type=email]{
-
-    padding: 3px;
+    padding: 2px;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid var(--coconut);
 }
 input[type=text],input[type=email]{
-    margin: 2% 4% ;
-    width: 20%;
-    min-width: 130px;
+    margin: 2% 20px ;
+    width: 28%;
+    min-width: 150px;
+    color: rgb(255, 255, 255);
 }
 textarea{
-    min-width: 56%;
+    min-width: 48%;
     max-width: 320px;
     max-height: 300px;
     margin: 10px 2px 2px;
@@ -434,7 +437,7 @@ textarea{
     background-color: var(--coconut);
 }
 .menor:hover{
-    background-color: rgba(88, 3, 3, 0.862);
+    background-color:var(--cinnamon);
 }
 footer {
     background-color: var(--cinnamon);
@@ -490,7 +493,7 @@ footer .Redes {
         position: absolute;
         width: 150px;
         top: 42px;
-        right: 5px;
+        right: 19px;
         background-color:var(--oliver);
         display: none;
         border-radius: 5px;
@@ -523,6 +526,7 @@ footer .Redes {
     .coluna i{
         font-size: 2em;
     }
+    
 }    
 .gradiend-icone {
     background: linear-gradient( to bottom,#E76F00,#3983b5); 
