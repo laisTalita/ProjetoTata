@@ -3,7 +3,7 @@
 :root{
     --oliver: #066339; 
     --coconut:#f0eee0f3;
-    --cinnamon: #8b3925f5; 
+    --cinnamon: #8b3925e7; 
     --slate: #1f1f16f3; 
     --textI: "Abel", sans-serif ;
     --textS: "Inconsolata", monospace;
@@ -11,9 +11,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
-
 html{
     box-shadow: inset 1px 10px 66px rgba(0, 0, 0, 0.016);
 }
@@ -65,7 +63,7 @@ li>a{
 #mnu{
     color: var(--coconut);
     position: absolute;
-    right: 29px;
+    right: 6px;
     top: 17px;
     font-size: 1.7em;
     display: none;
@@ -82,8 +80,8 @@ p{
 hr{
     border: none;
     height: 4px;
-    margin: 83px 1px 1px 10px;
-    width: 30%;
+    margin: 87px 1px 2px 10px;
+    width: 28%;
     background-image: linear-gradient(to right, var(--oliver), transparent) ;
 } 
 h2 {
@@ -117,12 +115,9 @@ section {
     }   
 }
 .fundo{
-    width: 100%;
+    width: 99%;
     margin-top: 0px;
     padding: 2px;
-   /* background-image: url(../imagens/Folhas_PNG_Transparente_Sem_Fundo.png);
-    background-attachment: fixed;
-    background-position: top center;*/
     background-color:#0663391a;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.046);
 }
@@ -133,9 +128,8 @@ section {
     outline-offset: 6px;
     border: 1px solid rgba(248, 247, 247, 0.995) ;
     animation:animacao-borda-baixo 5s 2s infinite alternate  ;
-    /*background-image:linear-gradient(to bottom,var(--coconut),var(--barlap), var(--coconut) ) ;*/
-    width: 92%;
-    padding: 6px;
+    width: 95%;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     background-color: var(--coconut);
@@ -162,7 +156,7 @@ section {
     padding: 6px 3px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    background-color:#5f8d79 ;
+    background-color:#0a6d409c ;
     border-radius: 20px;
     border: 1px solid var(--coconut);
     box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.157);
@@ -184,9 +178,9 @@ input[type="submit"] {
 }
 .but:hover,.proj button:hover {
     color: var(--coconut);
-    background-color: var(--oliver);
+    background-color: var(--cinnamon);
     box-shadow: 9px 6px 3px rgba(0, 0, 0, 0.071);
-    transition: 0.4s;
+    transition: 0.5s;
 }
 .proj button >p:hover {
     color: var(--coconut);
@@ -215,7 +209,7 @@ input[type="submit"] {
     align-items: center;
     justify-content: center;
     box-shadow:  0px 2px 20px 5px rgba(0, 0, 0, 0.034);
-    border-top: 2px solid #e4e6e4b9; /* Cinza claro */
+    border-top: 1px solid #e4e6e4ef; 
     background-color: var(--slate);
 } 
 #tecnologias h2{
@@ -227,13 +221,13 @@ input[type="submit"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     padding: 2px;
-    box-shadow: 1px 2px 12px 3px rgba(0, 0, 0, 0.144);
+    box-shadow: 1px 2px 12px 3px rgba(0, 0, 0, 0.075);
     background-color: rgb(233, 227, 212);
 } 
 .coluna{
-    width: 29%;
+    width: 28%;
     min-width: 300px;
     text-align: center;
     margin: 9px 1%;  
@@ -242,37 +236,39 @@ input[type="submit"] {
     list-style-type: none;
     padding: 0;
     box-shadow:  inset 1
-    2px 8px 2px rgba(16, 3, 3, 0.033);
+    2px 8px 2px rgba(16, 3, 3, 0.094);
 }
 .coluna li{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px 1px;
-    margin: 10px 3px;
-    box-shadow:  1px 1px 8px 2px rgba(0, 0, 0, 0.038);
+    padding: 6px;
+    margin: 10px 6px;
+    box-shadow:  1px 1px 8px 2px rgba(0, 0, 0, 0.101);
+
 }
 .coluna i{
-    font-size: 2.7em;
+    font-size: 2.8em;
     vertical-align: middle;
 }
 .coluna abbr{
     text-decoration: none;
     font-size: 1.3em;
     vertical-align: middle;
-    margin: 5px;
+    margin: 2px 7px;
 }
 .progress-bar-container {
-    width: 47%; 
+    width: 56%; 
     background-color: #1f090e2d; 
     border-radius: 10px;
     overflow: hidden;
     height: 20px;
-    margin: 16px 0px;
+    margin: 10px 0;
 }
 .progress-bar {
     height: 100%;
-    background-color: var(--cinnamon);
+   /* background-image: linear-gradient( to right, var(--slate),var(--cinnamon));*/
+   background-color: var(--cinnamon);
     border-radius: 10px; 
 }
 .percentage {
@@ -367,30 +363,36 @@ input[type="submit"] {
     padding-bottom: 120px;
 }
 .cont{
+    display: flex;
+    justify-content: center;
     padding: 2px;
     text-align: center;
-    width: 46%;
-    min-width: 500px;
+    width: 47%;
+    min-width: 490px;
     background-color: var(--slate);
     border: 1px solid rgba(40, 40, 40, 0.129);
     border-radius: 30px 2px;
     box-shadow: 1px 1px  20px 1px var(--coconut);
+}
+form{
+    width: 99%;
 }
 .fil{
     border-style: none;
     font-family: var(--textS);
 }
 #f1{
-    flex-direction: column;
-    justify-content: center;
     margin-top: 20px;
 }
 #f1-2{
+    width: 90%;
     font-size: 1.2em;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
+    margin: 20px;
+    border: 1px solid black;
     box-shadow: inset 12px 2px 23px rgba(0, 0, 0, 0.072);
+}
+#f1-2 legend{
+    font-size: 18px;
 }
 #f1-2 .itens{
     display: flex;
@@ -399,26 +401,22 @@ input[type="submit"] {
     justify-content: center;
     flex-wrap: wrap;
 }
-#f1-2 legend{
-    font-size: 18px;
-}
 form input, form h2, form p, form label {
     color: var(--coconut);
 }
 input[type=text],input[type=email]{
-    padding: 2px;
+    padding: 3px;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid var(--coconut);
 }
 input[type=text],input[type=email]{
     margin: 2% 20px ;
-    width: 28%;
-    min-width: 150px;
-    color: rgb(255, 255, 255);
+    width: 25%;
+    min-width: 140px;
 }
 textarea{
-    min-width: 48%;
+    min-width: 56%;
     max-width: 320px;
     max-height: 300px;
     margin: 10px 2px 2px;
@@ -435,9 +433,10 @@ textarea{
     font-size: 1em;
     margin: 17px;
     background-color: var(--coconut);
+    color: var(--slate);
 }
 .menor:hover{
-    background-color:var(--cinnamon);
+    background-color: var(--cinnamon);
 }
 footer {
     background-color: var(--cinnamon);
@@ -513,9 +512,6 @@ footer .Redes {
    .projeto,.projetos{
         margin: auto;
     }
-    /*.proj{
-        background-image: linear-gradient(to bottom, rgb(0, 0, 0)5%, rgba(34, 40, 54, 0.323) 15%,var(--coconut));
-    }*/
     #DivDaImg >img{
         width: 100%;
         z-index: 1;
@@ -526,7 +522,6 @@ footer .Redes {
     .coluna i{
         font-size: 2em;
     }
-    
 }    
 .gradiend-icone {
     background: linear-gradient( to bottom,#E76F00,#3983b5); 
