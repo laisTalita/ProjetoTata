@@ -368,7 +368,7 @@ input[type="submit"] {
     padding: 2px;
     text-align: center;
     width: 47%;
-    min-width: 490px;
+    min-width: 440px;
     background-color: var(--slate);
     border: 1px solid rgba(40, 40, 40, 0.129);
     border-radius: 30px 2px;
@@ -385,9 +385,9 @@ form{
     margin-top: 20px;
 }
 #f1-2{
-    width: 90%;
+    width: 96%;
     font-size: 1.2em;
-    margin: 20px;
+    margin: 10px;
     border: 1px solid black;
     box-shadow: inset 12px 2px 23px rgba(0, 0, 0, 0.072);
 }
@@ -464,7 +464,9 @@ footer .Redes {
         width: 80%;
         min-width: 340px;
     }
-    
+  
+   
+ 
 }
 @media (max-width:740px){
     #sobre{
@@ -491,8 +493,8 @@ footer .Redes {
         text-align: right;
         position: absolute;
         width: 150px;
-        top: 42px;
-        right: 19px;
+        top: 37px;
+        right: 1px;
         background-color:var(--oliver);
         display: none;
         border-radius: 5px;
@@ -522,6 +524,7 @@ footer .Redes {
     .coluna i{
         font-size: 2em;
     }
+   
 }    
 .gradiend-icone {
     background: linear-gradient( to bottom,#E76F00,#3983b5); 
