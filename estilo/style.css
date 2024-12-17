@@ -61,6 +61,7 @@ li>a{
     margin: 2px 10px;  
 }
 #mnu{
+    background-color: rgba(255, 255, 255, 0.017);
     color: var(--coconut);
     position: absolute;
     right: 3%;
@@ -68,6 +69,13 @@ li>a{
     font-size: 1.7em;
     display: none;
     cursor: pointer;
+    box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.029);
+}
+#mnu:hover{
+    background-color: rgba(255, 255, 255, 0.143);
+    box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.029);
+
+
 }
 p{
     text-indent: 1em;
@@ -108,11 +116,14 @@ section {
 }
 @keyframes animacao-borda-baixo {
     from{
-        outline: 1px solid var(--coconut);
+        outline: 1px solid transparent;
     }
     to{
-        outline: 2px solid rgba(255, 255, 255, 0.609);
+        outline: 1px solid white;
     }   
+}
+#disp{
+    display: none;
 }
 .fundo{
     width: 99%;
@@ -127,7 +138,7 @@ section {
     margin-bottom: 10%;
     outline-offset: 6px;
     border: 1px solid rgba(248, 247, 247, 0.995) ;
-    animation:animacao-borda-baixo 5s 2s infinite alternate  ;
+    animation:animacao-borda-baixo 3s 2s infinite alternate  ;
     width: 95%;
     padding: 10px;
     justify-content: center;
@@ -418,7 +429,8 @@ input[type=text],input[type=email]{
 textarea{
     min-width: 56%;
     max-width: 320px;
-    max-height: 300px;
+    min-height: 50px;
+    max-height: 140px;
     margin: 10px 2px 2px;
     padding: 4%;
     background-color: rgba(235, 232, 232, 0.87);
