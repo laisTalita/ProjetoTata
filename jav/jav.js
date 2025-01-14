@@ -19,7 +19,7 @@
   });
   document.addEventListener('click', function(event) {
       if (!ulMenu.contains(event.target) && event.target !== menuIcon && !menuIcon.contains(event.target)) {  
-          ulMenu.classList.remove('show');7
+          ulMenu.classList.remove('show');
           menu1.style.display = 'block';  
           menu2.style.display = 'none';
       }
