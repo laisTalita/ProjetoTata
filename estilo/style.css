@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --oliver: #066339; 
     --coconut:#f0eee0f3;
     --cinnamon: #8b3925e7; 
     --slate: #1f1f16f3; 
     --textI: "Abel", sans-serif ;
-    --textS: "Inconsolata", monospace;
+    --textS: "Roboto", serif;
 }
 *{
     margin: 0px;
@@ -29,7 +31,8 @@ nav{
     justify-content: right;
     position: fixed;
     top: 0px; 
-    width: 100%; 
+    width: 100%;
+    z-index: 3; 
     height: 55px;
    box-shadow: 3px 4px 31px rgba(0, 0, 0, 0.227);
 }
@@ -48,14 +51,16 @@ nav{
 }
 .links>li{
     list-style-type: none;
-    margin: 1px;
+    margin: 1px 6px;
     padding: 2px;
+    background-color: #23222219;
+    border-radius: 10px;
 } 
 .links>li:hover{
     background-color: rgba(255, 255, 255, 0.103);
 }
 li>a{
-    font-size:1.4em;
+    font-size:1.2em;
     color:var(--coconut);
     text-decoration: none;
     margin: 2px 10px;  
@@ -74,7 +79,6 @@ li>a{
 #mnu:hover{
     background-color: rgba(255, 255, 255, 0.143);
     box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.029);
-
 
 }
 p{
@@ -126,24 +130,88 @@ section {
     display: none;
 }
 .fundo{
-    width: 99%;
+    width: 100%;
     margin-top: 0px;
+    min-width: 300px;
     padding: 2px;
     background-color:#0663391a;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.046);
 }
-#sobre{
+#home{
     display: flex;
     margin-top: 13%;
     margin-bottom: 10%;
     outline-offset: 6px;
     border: 1px solid rgba(248, 247, 247, 0.995) ;
     animation:animacao-borda-baixo 3s 2s infinite alternate  ;
-    width: 95%;
-    padding: 10px;
+    width: 80%;
     justify-content: center;
     align-items: center;
     background-color: var(--coconut);
+}
+#sobre{
+    background-color: rgba(6, 6, 6, 0.929);
+    padding: 30px;
+
+}
+.contFatos{
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    overflow-x:scroll ;
+    overflow-y: hidden;
+}
+.fatos{
+    flex: 0 0 280px;  
+    height: 400px;
+    background-size: cover;
+    background-position: center center; 
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.598);
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.fatos i{
+    color: white;
+    font-size: 1.8em;
+    text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.937);
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    bottom: 2px;
+    left: 4px;
+}
+.d1{
+    background-image: url(../imagens/gatito.jpeg);
+    background-position:  top center;
+}
+.d2{
+    background-image: url(../imagens/viper-8362870_640.jpg);
+}
+.d3{
+    background-image: url(../imagens/wolverine-6074789_640.jpg);
+}
+.d4{
+    background-image: url(../imagens/pintura.jpg);
+}
+#sobre h2{
+    color: var(--coconut);
+    margin: 5px;
+    text-align: center;
+}
+.up{
+    display: none;
+    padding: 10px;
+}
+.up p{
+    color: var(--coconut);
 }
 #paragrafo{
     display: flex;
@@ -157,8 +225,26 @@ section {
 #paragrafo >p{
     font-size: 1.3em;
 }
-#paragrafo> h1{
-    margin-bottom: 10px;
+.cont-msg{
+    padding: 10px;
+}
+.msg{
+    border-right: 6px solid var(--slate);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 20ch;
+    animation: mark .5s step-end infinite, write 3s steps(22,end)1;
+
+}
+@keyframes mark {
+    50%{
+        border-right-color:transparent;
+    } 
+}
+@keyframes write {
+    0%{
+        width: 0px;
+    }
 }
 .but{
     margin-top: 50px;
@@ -291,7 +377,7 @@ input[type="submit"] {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;  
 }
 .proj{
     margin: 1%;
@@ -306,6 +392,7 @@ input[type="submit"] {
     background-color:#9eb09f ;
     
 }
+
 .projetos ,.projeto{
     width: 90% ;
     background-color:var(--coconut);
@@ -334,6 +421,9 @@ input[type="submit"] {
     margin: 5px;  
     float: left;
 } 
+.projeto p, .projetos p{
+    padding: 20px;
+}
 .projeto img{
     float: right;
 }
@@ -452,24 +542,36 @@ textarea{
 }
 footer {
     background-color: var(--cinnamon);
-    display: flex; 
-}
-footer .Redes {
     display: flex;
-    width: 150px;
-    margin: 1px 40px;
+    justify-content: center; 
+}
+footer p{
+    color: var(--coconut);
+}
+#direita{
+    position: fixed;
+    top: 50%;
+    right: 1%;
+}
+#esquerda{
+    position: fixed;
+    top: 50%;
+    left: 1%;
 }
 .Redes a{
-    font-size:  1.6em;
-    padding: 1px 16px;
-    color: var(--cinnamon);
-    background: rgba(255, 255, 255, 0.569);
+    font-size:  1.8em;
+    padding: 1px 14px;
+    color: rgb(255, 255, 255);
+    background: rgba(11, 10, 10, 0.832);
     border: 1px solid var(--coconut);
     border-radius: 50%;
-    margin: 1px 7px;
+    margin: 2px 7px;
+    z-index: 4;
 }
 .Redes a:hover{
     background-color: rgba(255, 255, 255, 0.778);
+    color: rgb(166, 25, 25);
+    border: 1px solid brown;
 }
 @media (max-width:870px) {
     .proj{
@@ -478,7 +580,7 @@ footer .Redes {
     }
 }
 @media (max-width:740px){
-    #sobre{
+    #home{
         margin-top: 150px;
         border: none;
     }
@@ -503,7 +605,7 @@ footer .Redes {
         position: absolute;
         width: 150px;
         top: 37px;
-        right: 13px;
+        right: 15px;
         background-color:var(--oliver);
         display: none;
         border-radius: 5px;
@@ -528,7 +630,7 @@ footer .Redes {
         z-index: 1;
     }
     .Redes a{
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
     .coluna i{
         font-size: 2em;

@@ -24,3 +24,25 @@
           menu2.style.display = 'none';
       }
   });
+
+
+  function show(element) {
+   const card = element.closest(".fatos")
+   var up =card.querySelector(".up")
+
+   if (up.style.display ==="block") {
+      up.style.display ="none"
+      card.style.background = "" //restaurar
+    }
+   else{
+     document.querySelectorAll(".up").forEach(element => {
+        element.style.display ="none"
+        element.closest(".fatos").style.background=""
+     });
+     up.style.display ="block"
+     card.style.background="black"
+
+
+   }
+  }
+  

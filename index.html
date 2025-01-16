@@ -8,7 +8,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
       <header>
           <nav>
               <div id="ico"> &lt; Lais Talita/&gt;</div>
@@ -18,19 +17,30 @@
               </div> 
 
               <ul class="links" id="menuLinks">
-                  <li><a href="#sobre">Sobre</a></li>
+                  <li><a href="#home">Home</a></li>
                   <li><a href="#tecnologias" >Habilidades </a></li>
                   <li><a href="#projetos" >Projetos</a></li>
+                  <li><a href="#sobre" >Sobre</a></li>
                   <li><a href="#contato" >Contato</a></li>
+
               </ul>
           </nav>
       </header>
       <main>
 
+        <aside>
+          <div class="Redes">
+            <a id="direita" href="https://github.com/laisTalita" target="_blank"><i class='bx bxl-github'></i></a>
+            <a id="esquerda" href="https://wa.link/rcrt7m" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </aside>
         <div class="fundo">
-          <section id="sobre" class="scroll" >
+          <section id="home" class="scroll" >
                   <div id="paragrafo">
-                    <h1> Desenvolvedora Frontend</h1>
+                    
+                    <div class="cont-msg">
+                      <h1 class="msg"> Desenvolvedora Frontend</h1>
+                    </div>
           
                       <p>Olá! Sou Lais Talita. Este portfólio foi criado para apresentar meus projetos e compartilhar as áreas que venho estudando e aprimorando.</p>
           
@@ -121,9 +131,9 @@
                   <div><i class='bx bxl-bootstrap icone-boot' ></i><abbr> Bootstrap </abbr>
                   </div>
                   <div class="progress-bar-container">
-                     <div class="progress-bar" style="width: 20%;"></div>
+                     <div class="progress-bar" style="width: 40%;"></div>
                   </div>
-                  <div><span class="percentage">20%</span></div>
+                  <div><span class="percentage">40%</span></div>
                 </li>
               </ul>
             </div>
@@ -135,12 +145,9 @@
         <hr>
         <section id="projetos" class="scroll">
           <h2>Projetos</h2>
-          
-
           <div class="proj">
 
-            <div class="esquerda">
-              
+            <div class="esquerda"> 
                 <div class="projetos" >
                   <img src="imagens/nasa.jpeg" alt="">
                   <p>Visualizador de dias. 
@@ -152,11 +159,9 @@
 
               <a href="https://laistalita.github.io/ProjetoNasa/" target="_blank"><button><p>Ver site</p></button></a>
               <a href="https://github.com/laisTalita/ProjetoNasa" target="_blank"><button><i class='bx bxl-git'></i></button></a>
-
             </div>
 
             <div class="direita">
-              
                 <div class="projeto">
                   <img src="imagens/jog.png" alt="">
                   <p>Jogo da velha.
@@ -167,10 +172,6 @@
                   <button><i class='bx bxl-git'></i></button></a>
   
               <a href="https://laistalita.github.io/jogo-da-velha/" target="_blank"><button><p>Ver site</p></button></a>
-
-             
-
-              
             </div>
 
             <div class="esquerda">
@@ -187,9 +188,9 @@
 
               <button><p>Ver site</p></button>
               <button><i class='bx bxl-git'></i></button>
-          </div>
+            </div>
 
-          <div class="direita">
+            <div class="direita">
             
               <div class="projeto">
                 <img src="" alt="">
@@ -203,24 +204,50 @@
 
               <button><i class='bx bxl-git'></i></button>
               <button><p>Ver site</p></button>
-
-
-          </div>
-          
-            
-
-
-           
-          </div>
-      
-          
+            </div>  
+        </div>
         </section> 
+
+        <section id="sobre" class="scroll" >
+          <h2>Um pouco sobre mim</h2>
+          <div class="contFatos">
+            <div class="fatos d1">
+              <div class="up" style="display: none;">
+                  <img src="imagens/icons8-gato-64.png" alt="">
+                  <p>Eu adoro animais! Tenho um gato e quatro cachorros. Meu gato é especialmente charmoso, se chama Zabuza Gatochi, o gatinho do miado oculto</p>
+              </div>
+              <i onclick="show(this)" class='bx bx-show-alt show'></i>
+            </div>
+            <div class="fatos d2">
+              <div class="up" style="display: none;">
+                  <img src="imagens/icons8-serpente-64.png" alt="">
+                  <p>Gosto muito de biologia e adoro acompanhar canais sobre o tema. Cobras me fascinam! Elas são incríveis, e têm um papel essencial na natureza. <p>Esse, com certeza é um dos meus assuntos favoritos!</p></p>
+              </div>
+              <i onclick="show(this)" class='bx bx-show-alt '></i>
+            </div>
+            <div class="fatos d3">
+              <div class="up" style="display: none;">
+                  <img src="imagens/icons8-machadinha-50.png" alt="">
+                  <p>Cresci assistindo filmes de terror e do gênero trash, como Sexta-feira 13, Freddy Krueger, Chucky, entre outros.
+                    Outro tema que gosto muito são de heróis, como os da DC e da Marvel.
+                    Assuntos desses gêneros me interessam. <p>Por fim, esse, por exemplo, é um Jason com garras de Wolverine!</p></p>
+              </div>
+              <i onclick="show(this)" class='bx bx-show-alt show'></i>
+            </div>
+            <div class="fatos d4">
+              <div class="up" style="display: none;">
+                  <img src="imagens/icons8-escova-50.png" alt="">
+                  <p>Gosto muito de pintar, especialmente desenhos realistas. Apesar de às vezes não terminar por preguiça, adoro o processo. Desenhos realistas demandam muito tempo, e hoje em dia não tenho tanto para dedicar, mas ainda é algo que gosto de fazer</p>
+              </div>
+              <i onclick="show(this)" class='bx bx-show-alt show'></i>
+            </div>
+       
+          </div>
+        </section>
         
         <section id="contato" class="scroll">
-
           <br>
           <br>
-
           <div class="cont">
             
             <form action="https://formsubmit.co/laistalita5664@gmail.com" method="POST">
@@ -270,16 +297,13 @@
               <input class="but menor" type="submit" value="Enviar" >
 
             </form>
-            
           </div>
           
         </section>
     </main>
         
     <footer> 
-        <div class="Redes">
-        <a href="https://github.com/laisTalita" target="_blank"><i class='bx bxl-github'></i></a>
-  
+      <p>@Lais Talita</p>
     </footer> 
 
 </body>
