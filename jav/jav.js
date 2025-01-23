@@ -25,7 +25,7 @@
       }
   });
 
-
+/*
   function show(element) {
    const card = element.closest(".fatos")
    var up =card.querySelector(".up")
@@ -40,9 +40,10 @@
         element.closest(".fatos").style.background=""
      });
      up.style.display ="block"
-     card.style.background="black"
+     card.style.background="black"}
+}
+*/
 
-
-   }
-  }
+   
+  
   

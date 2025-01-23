@@ -14,6 +14,11 @@
     margin: 0px;
     padding: 0px;
 }
+body, html{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
 html{
     box-shadow: inset 1px 10px 66px rgba(0, 0, 0, 0.016);
 }
@@ -39,7 +44,7 @@ nav{
 #ico {
     font-family:var(--textI);
     position: absolute;
-    left: 6%; 
+    left: 5%; 
     font-size: 1.5em;
     top:15px ;
     color: var(--coconut);
@@ -69,7 +74,7 @@ li>a{
     background-color: rgba(255, 255, 255, 0.017);
     color: var(--coconut);
     position: absolute;
-    right: 3%;
+    right: 7%;
     top: 17px;
     font-size: 1.7em;
     display: none;
@@ -132,10 +137,10 @@ section {
 .fundo{
     width: 100%;
     margin-top: 0px;
-    min-width: 300px;
     padding: 2px;
     background-color:#0663391a;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.046);
+    overflow: hidden;
 }
 #home{
     display: flex;
@@ -144,74 +149,110 @@ section {
     outline-offset: 6px;
     border: 1px solid rgba(248, 247, 247, 0.995) ;
     animation:animacao-borda-baixo 3s 2s infinite alternate  ;
-    width: 80%;
+    width: 60%;
+    min-width: 300px;
     justify-content: center;
     align-items: center;
     background-color: var(--coconut);
 }
 #sobre{
-    background-color: rgba(6, 6, 6, 0.929);
-    padding: 30px;
-
+    background-color:rgba(0, 0, 0, 0.944);
+    display: flex;
+    justify-content: center;
 }
-.contFatos{
-    width: 60%;
+#contends{
+    box-shadow: inset 2px 5px 15px rgba(0, 0, 0, 0.877);
+    background-color: rgba(71, 87, 63, 0.794);
+    width: 70%;
     min-width: 300px;
-    margin: auto;
     display: flex;
-    justify-content: start;
-    gap: 20px;
-    overflow-x:scroll ;
-    overflow-y: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    padding: 2px;
+    height: auto;
+    position: relative;
+    overflow-y: hidden; 
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective-origin: right;
+    -moz-perspective-origin: right;
+    perspective-origin: right;
 }
-.fatos{
-    flex: 0 0 280px;  
+.card{
+    position: relative;
+    flex: 0 0 300px;
     height: 400px;
-    background-size: cover;
-    background-position: center center; 
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.598);
-    padding: 5px;
-    display: flex;
+    margin: 20px 30px;
     text-align: center;
+    -webkit-transform: rotate(0deg); 
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+     transform-style: preserve-3d;
+     transition: .2s ease-in-out;
+}
+.card_front, .card_back{
+    box-shadow: 10px 10px 6px 2px rgba(0, 0, 0, 0.716);
+    border-top: 2px solid rgba(255, 255, 255, 0.275);
+    border-left: 2px solid rgba(255, 255, 255, 0.206);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card_front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pint {
+ width: 100%;
+ height: 100%;
+ background-image: url(../imagens/pintura.jpg);
+ background-position: center ;
+}
+.card_front {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    z-index: 2; 
+}
+.card_back{ 
+    background-color: #000000e8;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    font-size: 1.1em;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    font-family: 'Arimo', sans-serif;
 }
-.fatos i{
+.card_back p{
     color: white;
-    font-size: 1.8em;
-    text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.937);
+}
+ .card:hover{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg) ;
+    transform: rotateY(180deg) ;
     cursor: pointer;
-    z-index: 2;
-    position: absolute;
-    bottom: 2px;
-    left: 4px;
-}
-.d1{
-    background-image: url(../imagens/gatito.jpeg);
-    background-position:  top center;
-}
-.d2{
-    background-image: url(../imagens/viper-8362870_640.jpg);
-}
-.d3{
-    background-image: url(../imagens/wolverine-6074789_640.jpg);
-}
-.d4{
-    background-image: url(../imagens/pintura.jpg);
-}
-#sobre h2{
-    color: var(--coconut);
-    margin: 5px;
-    text-align: center;
-}
-.up{
-    display: none;
-    padding: 10px;
-}
-.up p{
-    color: var(--coconut);
 }
 #paragrafo{
     display: flex;
@@ -232,7 +273,7 @@ section {
     border-right: 6px solid var(--slate);
     overflow: hidden;
     white-space: nowrap;
-    width: 20ch;
+    width: 20.2ch;
     animation: mark .5s step-end infinite, write 3s steps(22,end)1;
 
 }
@@ -319,6 +360,7 @@ input[type="submit"] {
     flex-wrap: wrap;
     justify-content: center;
     width: 86%;
+    min-width: 310px;
     padding: 10px;
     box-shadow: 1px 2px 12px 3px rgba(0, 0, 0, 0.075);
     background-color: rgb(233, 227, 212);
@@ -503,7 +545,11 @@ form{
     flex-wrap: wrap;
 }
 form input, form h2, form p, form label {
+    font-size: 1em;
     color: var(--coconut);
+}
+form h2{
+    font-size: 1.5em;
 }
 input[type=text],input[type=email]{
     padding: 3px;
@@ -605,7 +651,7 @@ footer p{
         position: absolute;
         width: 150px;
         top: 37px;
-        right: 15px;
+        right: 5%;
         background-color:var(--oliver);
         display: none;
         border-radius: 5px;
