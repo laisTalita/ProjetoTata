@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root{
     --oliver: #066339; 
     --coconut:#f0eee0f3;
@@ -31,7 +29,8 @@ body{
     font-family: var(--textS);
 }
 nav{
-   background-image: linear-gradient(to bottom, var(--oliver) 90%, transparent);
+    background-color: var(--oliver) ;
+    border: 1px solid white;
     display: flex;
     justify-content: right;
     position: fixed;
@@ -39,7 +38,7 @@ nav{
     width: 100%;
     z-index: 3; 
     height: 55px;
-   box-shadow: 3px 4px 31px rgba(0, 0, 0, 0.227);
+    box-shadow: 3px 4px 31px rgba(0, 0, 0, 0.227);
 }
 #ico {
     font-family:var(--textI);
@@ -51,20 +50,20 @@ nav{
 }
 .links{
     display: flex;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-right: 10px;
 }
 .links>li{
     list-style-type: none;
-    margin: 1px 6px;
+    margin: 4px;
+    border-radius: 4px;
     padding: 2px;
-    background-color: #23222219;
-    border-radius: 10px;
 } 
 .links>li:hover{
     background-color: rgba(255, 255, 255, 0.103);
 }
 li>a{
+    padding:4px;
     font-size:1.2em;
     color:var(--coconut);
     text-decoration: none;
@@ -84,7 +83,6 @@ li>a{
 #mnu:hover{
     background-color: rgba(255, 255, 255, 0.143);
     box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.029);
-
 }
 p{
     text-indent: 1em;
@@ -151,16 +149,13 @@ section {
     animation:animacao-borda-baixo 3s 2s infinite alternate  ;
     width: 60%;
     min-width: 300px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     background-color: var(--coconut);
 }
 #sobre{
     background-color:rgba(0, 0, 0, 0.944);
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     position: relative;
 }
 #sobre i{
@@ -168,7 +163,7 @@ section {
     position: absolute;
     left: 1%;
     top: 2%;
-    color: white;
+    color: var(--coconut);
     display: none;
 }
 #contends{
@@ -177,8 +172,7 @@ section {
     width: 70%;
     min-width: 300px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; 
+    flex-flow: row nowrap ;
     justify-content: flex-start;
     padding: 2px;
     height: auto;
@@ -208,8 +202,8 @@ section {
     transform: rotate(0deg);
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
-     transform-style: preserve-3d;
-     transition: .2s ease-in-out;
+    transform-style: preserve-3d;
+    transition: .2s ease-in-out;
 }
 .card_front, .card_back{
     box-shadow: 10px 10px 6px 2px rgba(0, 0, 0, 0.716);
@@ -244,8 +238,8 @@ section {
     background-color: #000000e8;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
     font-size: 1.02em;
     padding: 4px;
     box-sizing: border-box;
@@ -257,7 +251,7 @@ section {
     font-family: 'Arimo', sans-serif;
 }
 .card_back p{
-    color: white;
+    color: var(--coconut);
 }
  .card:hover{
     -webkit-transform: rotateY(180deg);
@@ -267,9 +261,9 @@ section {
 }
 #paragrafo{
     display: flex;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
     margin: 8px ;
     width: 50%;
     min-height: 40vh;
@@ -286,7 +280,6 @@ section {
     white-space: nowrap;
     width: 20.2ch;
     animation: mark .5s step-end infinite, write 3s steps(22,end)1;
-
 }
 @keyframes mark {
     50%{
@@ -351,13 +344,11 @@ input[type="submit"] {
         margin: 20px auto;
         padding: 3px;
     }
-
 }
 #tecnologias{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     box-shadow:  0px 2px 20px 5px rgba(0, 0, 0, 0.034);
     border-top: 1px solid #e4e6e4ef; 
     background-color: var(--slate);
@@ -369,8 +360,7 @@ input[type="submit"] {
 #listas{
     margin-top: 43px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-flow: row wrap;
     width: 86%;
     min-width: 310px;
     padding: 10px;
@@ -378,10 +368,10 @@ input[type="submit"] {
     background-color: rgb(233, 227, 212);
 } 
 .coluna{
-    width: 28%;
     min-width: 300px;
     text-align: center;
-    margin: 9px 1%;  
+    margin: 9px 1%;
+    flex: auto;
 }
 .coluna>ul{
     list-style-type: none;
@@ -392,11 +382,10 @@ input[type="submit"] {
 .coluna li{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 6px;
     margin: 10px 6px;
     box-shadow:  1px 1px 8px 2px rgba(0, 0, 0, 0.101);
-
 }
 .coluna i{
     font-size: 2.8em;
@@ -418,8 +407,7 @@ input[type="submit"] {
 }
 .progress-bar {
     height: 100%;
-   /* background-image: linear-gradient( to right, var(--slate),var(--cinnamon));*/
-   background-color: var(--cinnamon);
+    background-color: var(--cinnamon);
     border-radius: 10px; 
 }
 .percentage {
@@ -431,27 +419,23 @@ input[type="submit"] {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
 }
 .proj{
-    margin: 1%;
+    margin: 2% 3% 4%;
     box-shadow: inset 1px 2px 40px 12px #13120e27;
     padding: 5px;
     width: 54%;
     display: flex;
     min-width: 650px;
     flex-direction: column;
-    align-items: center;  
     border-radius: 15px;
     background-color:#9eb09f ;
-    
 }
-
 .projetos ,.projeto{
     width: 90% ;
     background-color:var(--coconut);
-    border:  4px double #fbfbf952;
-    padding: 2px  ;
+    padding: 7px  ;
     border-radius: 15px 2px;
     overflow: auto;
     max-height: 260px;
@@ -468,7 +452,6 @@ input[type="submit"] {
     margin-right: auto;
 }
 .proj img{
-    background-color: #212116;
     width: 56%; 
     min-width: 300px;
     max-height: 250px; 
@@ -528,6 +511,7 @@ input[type="submit"] {
     border: 1px solid rgba(40, 40, 40, 0.129);
     border-radius: 30px 2px;
     box-shadow: 1px 1px  20px 1px var(--coconut);
+    
 }
 form{
     width: 99%;
@@ -553,7 +537,7 @@ form{
     display: flex;
     margin: 3% 2%;
     gap: 7px 30px; 
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 form input, form h2, form p, form label {
@@ -600,11 +584,10 @@ textarea{
 }
 footer {
     background-color: var(--cinnamon);
-    display: flex;
-    justify-content: center; 
 }
 footer p{
     color: var(--coconut);
+    text-align: center;
 }
 #direita{
     position: fixed;
@@ -619,7 +602,7 @@ footer p{
 .Redes a{
     font-size:  1.8em;
     padding: 1px 14px;
-    color: rgb(255, 255, 255);
+    color: var(--coconut);
     background: rgba(11, 10, 10, 0.832);
     border: 1px solid var(--coconut);
     border-radius: 50%;
@@ -627,9 +610,9 @@ footer p{
     z-index: 4;
 }
 .Redes a:hover{
-    background-color: rgba(255, 255, 255, 0.778);
-    color: rgb(166, 25, 25);
-    border: 1px solid brown;
+    background-color: var(--coconut);
+    color:var(--slate);
+    border: 1px solid var(--slate);
 }
 @media (max-width:870px) {
     .proj{
@@ -644,14 +627,12 @@ footer p{
     }
     li{
         border: 1px solid rgba(255, 255, 255, 0.122);
-
     }
     li> a{
         font-size: 1.3em;
         line-height: 1;
         letter-spacing: 0.5;
     }
-    
     h1,h2{
         font-size: 1.3em;
     }  
@@ -675,7 +656,6 @@ footer p{
     .links li{
         margin: 6px 5px;
     }   
-   
     textarea{
         max-width: 250px;
         max-height: 200px;
@@ -696,13 +676,12 @@ footer p{
     #sobre i{
         display: block;
     }
-   
 }    
 .gradiend-icone {
     background: linear-gradient( to bottom,#E76F00,#3983b5); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-  }
+}
 .back-azul{
     background-color:#777BB4;
     border-radius: 50%;
