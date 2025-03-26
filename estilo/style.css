@@ -589,12 +589,12 @@ textarea{
     font-size: 1.4em; 
 }
 .menor{
-    width: 25%;
-    padding: 1px;
+    width: 30%;
+    padding: 4px;
     font-size: 1em;
     margin: 17px;
-    background-color: var(--coconut);
-    color: var(--slate);
+    background-color: var(--cinnamon);
+    color: var(--coconut);
 }
 .menor:hover{
     background-color: var(--cinnamon);
