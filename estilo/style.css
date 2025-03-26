@@ -21,7 +21,6 @@
     padding: 0px;
 }
 body, html{
-    box-sizing: border-box;
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
