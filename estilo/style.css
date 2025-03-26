@@ -24,9 +24,7 @@ body, html{
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
-}
-html{
-    box-shadow: inset 1px 10px 66px rgba(0, 0, 0, 0.016);
+    overflow-x: hidden;
 }
 body{
     background-color: var(--coconut);
@@ -36,20 +34,22 @@ body{
     color: var(--slate);
     font-family: var(--textS);
 }
-main{
+main {
     width: 100%;
 }
-nav{
+nav {
     background-color: var(--oliver);
     border: 1px solid white;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;  
     position: fixed;
-    top: 0px; 
+    top: 0;
+    left: 0; 
     width: 100%;
-    z-index: 3; 
+    z-index: 3;
     height: 55px;
     box-shadow: 3px 4px 31px rgba(0, 0, 0, 0.227);
+    padding: 0 10px; 
 }
 #ico {
     font-family:var(--textI);
@@ -168,7 +168,6 @@ section {
     box-shadow: inset 1px 3px 17px 7px rgba(0, 0, 0, 0.118);
     display: flex;
     justify-content: center;
-    position: relative;
 }
 #sobre i{
     font-size: 1.3em;
@@ -363,6 +362,7 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
     box-shadow:  0px 2px 20px 5px rgba(0, 0, 0, 0.034);
     border-top: 1px solid #e4e6e4ef; 
     background-color: var(--slate);
@@ -441,7 +441,7 @@ input[type="submit"] {
     padding: 5px;
     width: 54%;
     display: flex;
-    min-width: 650px;
+    min-width: 320px;
     flex-direction: column;
     border-radius: 15px;
     background-color:var(--coconut) ;
@@ -520,14 +520,11 @@ input[type="submit"] {
     padding: 2px;
     text-align: center;
     width: 50%;
-    min-width: 320px;
+    min-width: 322px;
     background-color: var(--coconut);
     border: 1px solid rgba(40, 40, 40, 0.129);
     border-radius: 20px 2px;
     box-shadow: 1px 1px 2px 1px var(--slate);
-}
-form{
-    width: 99%;
 }
 .fil{
     border-style: none;
@@ -632,15 +629,20 @@ footer p{
     color:var(--slate);
     border: 1px solid var(--slate);
 }
-/*@media screen and (max-width:500px){
+@media screen and (max-width:500px){
     #direita,#esquerda{
         display:none
     }
-    
-}*/
+    .cont{
+        width: 100%;
+    }
+    .proj{
+        width: 98%;
+    }
+}
 @media (max-width:870px) {
     .proj{
-        width: 80%;
+        width: 90%;
         min-width: 340px;
     }
 }
