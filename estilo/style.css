@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --oliver: #066339; 
-    --coconut:#f0eee0f3;
-    --cinnamon: #8b3925e7; 
-    --slate: #1f1f16f3; 
+    --oliver: #486643; 
+    --coconut:#e4e1d1f3;
+    --cinnamon: #7a4e39; 
+    --slate: #242421f7;
     --textI: "Abel", sans-serif ;
     --textS: "Roboto", serif;
 }
@@ -28,8 +28,11 @@ body{
     color: var(--slate);
     font-family: var(--textS);
 }
+main{
+    width: 100%;
+}
 nav{
-    background-color: var(--oliver) ;
+    background-color: var(--oliver);
     border: 1px solid white;
     display: flex;
     justify-content: right;
@@ -64,7 +67,7 @@ nav{
 }
 li>a{
     padding:4px;
-    font-size:1.2em;
+    font-size:1.3em;
     color:var(--coconut);
     text-decoration: none;
     margin: 2px 10px;  
@@ -135,9 +138,7 @@ section {
 .fundo{
     width: 100%;
     margin-top: 0px;
-    padding: 2px;
-    background-color:#0663391a;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.046);
+    background-color:#0000001d;
     overflow: hidden;
 }
 #home{
@@ -153,7 +154,10 @@ section {
     background-color: var(--coconut);
 }
 #sobre{
-    background-color:rgba(0, 0, 0, 0.944);
+    background-color:var(--slate);
+    width: 100%;
+    padding: 2%;
+    box-shadow: inset 1px 3px 17px 7px rgba(0, 0, 0, 0.118);
     display: flex;
     justify-content: center;
     position: relative;
@@ -168,8 +172,8 @@ section {
 }
 #contends{
     box-shadow: inset 2px 5px 15px rgba(0, 0, 0, 0.877);
-    background-color: rgba(71, 87, 63, 0.794);
-    width: 70%;
+    background-color: var(--slate);
+    width: 75%;
     min-width: 300px;
     display: flex;
     flex-flow: row nowrap ;
@@ -298,16 +302,13 @@ section {
 }
 .but{
     margin-top: 50px;
-    width: 19%;
-    min-width: 124px;
-    padding: 6px 3px;
+    min-width: 150px;
+    padding: 8px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    background-color:#0a6d409c ;
-    border-radius: 20px;
+    background-color:var(--oliver) ;
+    border-radius: 10px;
     border: 1px solid var(--coconut);
-    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.157);
-    color: var(--slate);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -316,11 +317,11 @@ input[type="submit"] {
 }
 .proj button{
     color: var(--slate);
-    background-color:#5f8d79;
+    background-color:var(--oliver);
     border: 1px solid var(--coconut);
-    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.068);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.032);
     border-radius: 15px;
-    padding: 2px 2px;
+    padding: 4px;
     cursor: pointer;
 }
 .but:hover,.proj button:hover {
@@ -428,14 +429,14 @@ input[type="submit"] {
 }
 .proj{
     margin: 2% 3% 4%;
-    box-shadow: inset 1px 2px 40px 12px #13120e27;
+    box-shadow:  1px 2px 10px 12px #13120e17;
     padding: 5px;
     width: 54%;
     display: flex;
     min-width: 650px;
     flex-direction: column;
     border-radius: 15px;
-    background-color:#9eb09f ;
+    background-color:var(--coconut) ;
 }
 .projetos ,.projeto{
     width: 90% ;
@@ -510,12 +511,12 @@ input[type="submit"] {
     justify-content: center;
     padding: 2px;
     text-align: center;
-    width: 47%;
-    min-width: 390px;
-    background-color: var(--slate);
+    width: 50%;
+    min-width: 320px;
+    background-color: var(--coconut);
     border: 1px solid rgba(40, 40, 40, 0.129);
-    border-radius: 30px 2px;
-    box-shadow: 1px 1px  20px 1px var(--coconut);
+    border-radius: 20px 2px;
+    box-shadow: 1px 1px 2px 1px var(--slate);
 }
 form{
     width: 99%;
@@ -523,6 +524,10 @@ form{
 .fil{
     border-style: none;
     font-family: var(--textS);
+}
+#f1 >div{
+    display: flex;
+    justify-content: space-evenly;
 }
 #f1{
     margin-top: 20px;
@@ -546,20 +551,20 @@ form{
 }
 form input, form h2, form p, form label {
     font-size: 1em;
-    color: var(--coconut);
+    color: var(--slate);
 }
 form h2{
     font-size: 1.5em;
 }
 input[type=text],input[type=email]{
-    padding: 3px;
+    padding: 2px;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid var(--coconut);
+    border-bottom: 2px solid var(--slate);
 }
 input[type=text],input[type=email]{
-    margin: 2% 20px ;
-    width: 25%;
+    margin: 1% 10px ;
+    width: 30%;
     min-width: 140px;
 }
 textarea{
@@ -587,7 +592,8 @@ textarea{
     background-color: var(--cinnamon);
 }
 footer {
-    background-color: var(--cinnamon);
+    width: 100%;
+    background-color: var(--slate);
 }
 footer p{
     color: var(--coconut);
@@ -617,6 +623,12 @@ footer p{
     background-color: var(--coconut);
     color:var(--slate);
     border: 1px solid var(--slate);
+}
+@media screen and (max-width:500px){
+    #direita,#esquerda{
+        display:none
+    }
+    
 }
 @media (max-width:870px) {
     .proj{
@@ -648,7 +660,7 @@ footer p{
         position: absolute;
         width: 150px;
         top: 37px;
-        right: 5%;
+        right: 4%;
         background-color:var(--oliver);
         display: none;
         border-radius: 5px;
@@ -693,11 +705,7 @@ footer p{
     height: 34px;
     padding: 1px 1px 6px 1px;
 }
-.cobra{
-    background: linear-gradient( to bottom,#215f92, #FFD43B);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-}
+
 .icone-boot{
     color:  #0d6efd;
 }
