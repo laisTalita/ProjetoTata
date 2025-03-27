@@ -12,7 +12,7 @@
     <meta name="keywords" content="desenvolvedora frontend, backend, portfólio, HTML, CSS, JavaScript, PHP, projetos web">
     <meta name="author" content="Lais Talita">
 </head>
-<body>
+<body class="d-flex flex-column">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <section class="container-fluid">
@@ -47,7 +47,7 @@
             <button class="btn btn-danger mt-4 botao" aria-label="Baixar currículo">Download CV</button>
           </a>
         </div>
-        <div id="home_imagem"> 
+        <div id="home_imagem" class=" d-none d-md-block"> 
         </div>
       </div>
     </section>
@@ -208,7 +208,7 @@
       <h2 class="mb-1 text-left fw-light w-100 fs-4 mt-5 projetos_h3" >Projetos</h2>
       <div class="proj mt-2 d-flex flex-column p-1 pb-3 align-items-center justify-content-center">
         <div class="esquerda m-3 p-2"> 
-          <div class="projeto d-flex gap-2 align-items-center w-100" >
+          <div class="projeto d-flex flex-column flex-lg-row gap-2 align-items-center w-100" >
             <img src="imagens/nasa.jpeg" alt="Imagem astronômica capturada pela NASA, visualizada por data">
             <div class="d-flex flex-column w-100 gap-4">
               <p>Visualizador de dias.
@@ -228,7 +228,7 @@
           </div>
         </div>
         <div class="direita m-3 p-2">
-          <div class="projeto d-flex gap-2 flex-row-reverse align-items-center w-100">
+          <div class="projeto gap-2 d-flex flex-column flex-lg-row-reverse align-items-center w-100">
             <img src="imagens/jog.png" alt=" segundo projeto, jogo da velha">
             <div class="d-flex flex-column w-100 gap-4 ">
               <p>Jogo da velha.
@@ -246,7 +246,7 @@
           </div>
         </div>
         <div class="esquerda m-3 p-2">
-          <div class="projeto d-flex gap-2 align-items-center w-100" >
+          <div class="projeto d-flex flex-column flex-lg-row gap-2 align-items-center w-100" >
             <img src="imagens/moda.jpg" alt="terceiro projeto, Bella vista">
             <div class="d-flex flex-column w-100 gap-4">
               <p>Bella Vista, é um site com integração ao banco de dados, onde usuários podem comprar e criar contas. Adms também poderão gerenciar itens conforme necessário.
@@ -264,7 +264,7 @@
           </div>
         </div>
         <div class="direita m-3 p-2">
-          <div class="projeto d-flex gap-2 flex-row-reverse align-items-center w-100">
+          <div class="projeto d-flex flex-column flex-lg-row-reverse  gap-2 align-items-center w-100">
             <img src="imagens/projeto4.png" alt="quarto projeto, agenda">
             <div class="d-flex flex-column w-100 gap-4">
               <p>CRUD simples em PHP com PDO. Inclui sistema de login para usuários, interface intuitiva e armazenamento seguro no banco de dados.</p>
@@ -364,7 +364,7 @@
     </section>
   </main>
   <footer class="bg-dark p-1 text-white d-flex flex-column align-items-center justify-content-center">
-    <div class=" footer  w-75 d-flex flex-wrap justify-content-evenly align-items-center pt-2 ">
+    <div class=" footer w-75 d-flex flex-column flex-sm-row justify-content-evenly align-items-center pt-2 gap-2 text-sm-left">
       <p class="w-50 align-self-start">Site desenvolvido com HTML, CSS, JS e BOOSTRAT</p>
       <div class=" align-self-start">
         <p>Conecte-se comigo </p>

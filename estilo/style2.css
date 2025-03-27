@@ -17,8 +17,6 @@ body{
     background-image: url(../imagens/Folhas_PNG_Transparente_Sem_Fundo.png);
     background-attachment: fixed;
     background-position: center;
-    display: flex;
-    flex-direction: column;
 }
 main{
     flex: 1;
@@ -153,27 +151,9 @@ hr{
 .direita button, .esquerda button{
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.194);
 }
-@media screen and (max-width: 768px){
-    #home_imagem{ display: none;
-    }
-}
-@media screen and (max-width: 1286px){
+@media (max-width: 1286px){
     .proj{
         width: 70%;
-    }
-}
-@media screen and (max-width:962px){
-    .projeto{
-          flex-direction: column !important;
-    }
-    .direita .projeto{
-        flex-direction: column !important;
-    }
-}
-@media screen and (max-width:448px){
-    .footer{
-        flex-direction: column !important;
-        text-align: left;
     }
 }
 .msg{
