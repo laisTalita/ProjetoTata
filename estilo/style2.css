@@ -154,7 +154,6 @@ hr{
 }
 .projeto img{
     width: 100%; 
-    max-width: 400px;
     max-height: 250px; 
     border-radius: 5px;
     border: 1px solid var(--white);
