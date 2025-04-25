@@ -11,12 +11,14 @@ body,html{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 body{
     background-color: var(--coconut)!important;
     background-image: url(../imagens/Folhas_PNG_Transparente_Sem_Fundo.png);
     background-attachment: fixed;
     background-position: center;
+    height: 200vh;
 }
 main{
     flex: 1;
@@ -56,11 +58,16 @@ nav ul li:hover{
     border-radius: 50%;
     box-shadow: inset 2px 3px 4px 4px rgba(0, 0, 0, 0.313);
 }
-#inicio{
+main{
     background-color:#e4e1d188;
-    margin-top: 0% ;
-    padding: 15vh 2px;
+
 }
+#inicio{
+    margin-top: 0% ;
+    padding: 20vh 2px;
+}
+
+
 #tecnologias{
     flex-wrap: wrap;
     color: var(--coconut);
@@ -75,6 +82,9 @@ nav ul li:hover{
 .coluna li{
     margin: 2% 0px;
     border-bottom: 1px solid rgba(80, 78, 78, 0.44);
+}
+abbr{
+    font-size: 1.1em;
 }
 .coluna li i,
 .coluna li abbr,
@@ -115,7 +125,8 @@ hr{
     width: 20%;
 }
 #projetos{
-    background-image:linear-gradient(to bottom, #e4e1d100 -2% , #e4e1d1d7 90%,#e4e1d103 100%) ;
+    backdrop-filter:blur(8px) ;
+    -webkit-backdrop-filter: blur(10px);
 }
 .projetos_h3{
     margin-left: 20%;
@@ -126,7 +137,7 @@ hr{
     background-image:linear-gradient(to bottom, #e4e1d108 0% , #e4e1d110 90%,#e4e1d103) ;
 }
 .proj p{
-    font-size: 18px;
+    font-size: 1.1em;
 }
 .esquerda, .direita{
    width: 90%;
@@ -283,9 +294,6 @@ hr{
 }
 .icone-boot{
     color:  #0d6efd;
-}
-#contato{
-    background-color: #e0ddcf90;
 }
 .scroll{
     scroll-margin-top: 100px;
