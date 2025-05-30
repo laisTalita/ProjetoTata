@@ -391,6 +391,9 @@ hr{
 .oculto {
   display: none !important;
 }
+#skillsRadars{
+    overflow-x: auto;
+}
 #skillsRadar{
     width: 40%;
     height: auto;
@@ -405,7 +408,7 @@ hr{
 }
 @media (max-width:400px) {
     #skillsRadar{
-        width: 80%;
+        width: 90%;
     }
     .texto p{
     width: 99%;
