@@ -16,3 +16,79 @@ document.addEventListener("click",function(event) {
         }
     }
 })
+
+let radarChart = null;
+
+function mudarGrafico() {
+  const carr = document.getElementById('carouselExampleIndicators');
+  const canvasDiv = document.getElementById('skillsRadars');
+  const canvas = document.getElementById('skillsRadar');
+
+  if (carr.classList.contains('oculto')) {
+    carr.classList.remove('oculto');
+    canvasDiv.classList.add('oculto');
+  } else {
+    carr.classList.add('oculto');
+    canvasDiv.classList.remove('oculto');
+
+    if (!radarChart) {
+      const ctx = canvas.getContext('2d');
+
+      const data = {
+        labels: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL', 'React', 'Node.js', 'Ajax', 'Json'],
+        datasets: [{
+          data: [85, 82, 65, 80, 75, 90, 20, 35, 50, 82],
+          fill: false,
+          borderColor: 'rgb(151, 9, 9)',
+          pointBackgroundColor: 'rgb(142, 27, 21)',
+          pointBorderColor:'rgb(127, 10, 10)',
+          pointRadius: 5,
+          tension: 0.4
+        }]
+      };
+      const config = {
+        type: 'radar',
+        data: data,
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animations: {
+            tension: {
+              duration: 1000,
+              easing: 'linear',
+              from: 1,
+              to: 0,
+              loop: true
+            }
+          },
+          scales: {
+            r:{
+            pointLabels: {
+                color: '#000000',
+                font: {
+                size: 14       
+                }
+            },
+            ticks: {
+                color: '#000000', 
+                font: {
+                size: 13        
+                },
+                backdropColor: 'transparent'
+            },
+            grid: {
+                color: 'rgba(0, 0, 0, 0.32)', 
+                lineWidth: 1
+                }
+            }
+            
+          }
+        }
+      };
+
+      radarChart = new Chart(ctx, config);
+    } else {
+      radarChart.resize();
+    }
+  }
+}
