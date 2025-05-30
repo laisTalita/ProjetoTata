@@ -52,8 +52,8 @@
       </div>
     </section>
     <section id="tecnologias">
-      <div class="d-flex justify-content-between">
-         <h2 class="ms-5 fw-light fs-3">Habilidades</h2>
+      <div class="d-flex justify-content-between ps-4">
+         <h2 class=" fw-light fs-3">Habilidades</h2>
         <button class="btn btn-danger mb-2 me-5" onclick="mudarGrafico()" title="Mudar visualização dos dados" aria-label="Mudar visualização dos dados"> 
           <i class="bi bi-grid"></i>
             <span class="d-none d-md-inline">Mudar visualização</span>
@@ -61,7 +61,7 @@
       </div>
        
 
-      <div id="carouselExampleIndicators" class="mx-auto carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" class="mx-auto carousel slide" data-bs-ride="carousel" data-bs-interval="25000">
         <div class="carousel-indicators mt-5">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -99,7 +99,7 @@
               <div class="colorido" id="js_colorido">
                 <div class="tech-card">
                   <div class="tech-header">
-                    <i class="bi bi-javascript fs-2"></i>
+                    <i class="bi bi-javascript fs-2 text-warning"></i>
                     <h3>JavaScript</h3>
                   </div>
                   <div class="tech-body">
@@ -271,6 +271,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </div>
+
       <div class="oculto" id="skillsRadars">
         <canvas id="skillsRadar" class="mx-auto"></canvas>
       </div>
@@ -279,7 +280,7 @@
 
   
     <section id="projetos" class="scroll p-4 mt-5">
-      <h2 class="ms-5 mt-4 fw-light fs-3">Projetos</h2>
+      <h2 class="ms-sm-2 ms-md-3 ms-lg-4 mt-4 fw-light fs-3">Projetos</h2>
       <div id="projetos_principais" class="d-flex flex-column align-items-center justify-content-center mx-auto mt-2 mb-3">
         <div class="d-flex flex-wrap container_principais">
           <article class="projeto" id="proj_1">
@@ -289,7 +290,7 @@
                 <p> Este projeto permite selecionar uma data
                 para ver qual imagem astronômica foi capturada pela NASA,
                 utilizando a API "Astronomy Picture of the day".</p>
-                <div class="d-flex gap-1">
+                <div class="d-flex gap-1 w-100 align-items-center justify-content-end">
                   <a class="me-2" href="https://reminiscent-laced-fireplant.glitch.me/" target="_blank" rel="noopener noreferrer">
                     <button class="btn btn-danger ">Ver site</button>
                   </a>
@@ -305,7 +306,7 @@
               <h3>Jogo da velha</h3>
               <p>
                 Este jogo foi desenvolvido apenas para aprimoramento de programação em JavaSript</p>
-              <div class="d-flex gap-1">
+              <div class="d-flex gap-1 w-100 align-items-center justify-content-end">
                 <a class="me-2" href="https://laistalita.github.io/jogo-da-velha/" target="_blank" rel="noopener noreferrer">
                   <button class="btn btn-danger">Ver site</button>
                 </a>
@@ -323,7 +324,7 @@
               <h3>Sistema Solar</h3>
               <p>  Veja o que acontece quando os planetas estão fora de lugar,veja também suas curiosidades.  
                </p>
-              <div class="d-flex gap-1">
+              <div class="d-flex gap-1 w-100 align-items-center justify-content-end">
                 <a class="me-2" href="https://laistalita.github.io/Planetas/" target="_blank" rel="noopener noreferrer">
                   <button class="btn btn-danger">Ver site</button>
                 </a>
@@ -338,7 +339,7 @@
             <div class="texto">
               <h3>Agenda</h3>
               <p>CRUD simples em PHP com PDO. Inclui sistema de login para usuários, interface intuitiva e armazenamento seguro no banco de dados.</p>
-              <div class="d-flex gap-1">
+              <div class="d-flex gap-1 w-100 align-items-center justify-content-end">
                 <a class="me-2" href="https://aganda.rf.gd/Projeto4/"  target="_blank" rel="noopener noreferrer">
                   <button class="btn btn-danger">Ver site</button>
                 </a>
@@ -439,24 +440,25 @@
       </div>
     </section>
   </main>
-  <footer class="bg-dark p-1 text-white d-flex flex-column align-items-center justify-content-center">
-    <div class=" footer w-75 d-flex flex-column flex-sm-row justify-content-evenly align-items-center pt-2 gap-2 text-sm-left">
-      <p class="w-50 align-self-start">Conecte-se comigo</p>
-      <div class=" align-self-start">
-          <div >
-            <a class="text-white me-2" href="https://www.linkedin.com/in/seu-perfil" target="_blank">
-              <i class="bi bi-linkedin fs-5 m-1"></i> LinkedIn
-            </a> | 
-            <a class="text-white me-2" href="https://github.com/laisTalita" target="_blank">
-              <i class="bi bi-github fs-5 m-1"></i> GitHub
-            </a>|
-            <a class="text-white me-2" href="https://wa.me/5511992086337" target="_blank"> Fale comigo no WhatsApp</a>
-          </div>
-      </div>
+  <footer class="bg-dark p-3 text-white d-flex flex-column align-items-center justify-content-center">
+  <div class="w-75 d-flex flex-column flex-sm-row justify-content-between align-items-center pt-2 gap-3">
+    <p class="mb-0">Conecte-se comigo</p>
+    <div class="d-flex flex-column flex-sm-row gap-3">
+      <a class="text-white d-flex align-items-center gap-1" href="https://www.linkedin.com/in/lais-talita" target="_blank">
+        <i class="bi bi-linkedin fs-5"></i> LinkedIn
+      </a>
+      <a class="text-white d-flex align-items-center gap-1" href="https://github.com/laisTalita" target="_blank">
+        <i class="bi bi-github fs-5"></i> GitHub
+      </a>
+      <a class="text-white d-flex align-items-center gap-1" href="https://wa.me/5511992086337" target="_blank">
+        <i class="bi bi-whatsapp fs-5"></i> WhatsApp
+      </a>
     </div>
-    <hr class="text-white w-100">
-    <p class="text-center">&copy; 2025 | Todos os direitos reservados | Criado por Lais Talita</p>
-  </footer>
+  </div>
+  <hr class="text-white w-100 mt-3 mb-2">
+  <p class="text-center small">&copy; 2025 | Todos os direitos reservados | Criado por Lais Talita</p>
+</footer>
+
  
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 

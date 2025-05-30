@@ -74,60 +74,56 @@ main{
 }
 
 #html_colorido{
-    background: linear-gradient(-45deg, #ebca5c,red);
+    background-image: linear-gradient(45deg, #e4eb5c,rgb(223, 130, 68),rgb(175, 37, 74), rgb(219, 141, 154));
 	
 }
 #css_colorido{
-    background-image: linear-gradient(45deg, rgba(73, 210, 208, 0.989),rgb(20, 43, 146),rgb(85, 240, 155));
-   
-	
+    background-image: linear-gradient(45deg, rgba(73, 210, 208, 0.989),rgb(20, 43, 146),rgb(85, 240, 155),black);
 }
 #js_colorido{
-    background-image: linear-gradient(-45deg, rgba(245, 232, 84, 0.65),rgba(227, 227, 180, 0.974));
+    background-image: linear-gradient(45deg, rgba(249, 233, 60, 0.885),rgba(227, 227, 180, 0.974),orange,black);
 }
 #bot_colorido{
-    background-image: linear-gradient(45deg,rgb(142, 243, 243),rgba(35, 26, 161, 0.966));
-
+    background-image: linear-gradient(45deg,rgb(142, 243, 243),rgba(35, 26, 161, 0.966),rgb(32, 195, 220));
 }
 #rec_colorido{
-    background-image: linear-gradient(-45deg,rgb(30, 150, 152),rgba(185, 246, 241, 0.939));
+    background-image: linear-gradient(45deg,rgb(30, 150, 152),rgba(185, 246, 241, 0.939),blue,green);
 }
 #php_colorido{
-    background-image: linear-gradient(-45deg,rgb(141, 65, 203),rgba(224, 199, 245, 0.9),rgb(47, 11, 77));
+    background-image: linear-gradient(45deg,rgb(194, 146, 233),rgba(84, 6, 115, 0.9),rgb(179, 45, 114),pink);
 }
 #my_colorido{
-    background-image: linear-gradient(-45deg,rgb(70, 198, 202),rgba(238, 195, 126, 0.926),rgb(23, 86, 88),orange);
+    background-image: linear-gradient(45deg,rgb(41, 206, 212),rgba(230, 166, 63, 0.926),rgb(58, 110, 183),rgb(207, 213, 36));
 }
 #node_colorido{
-    background-image: linear-gradient(-45deg,rgb(58, 226, 92),rgba(13, 12, 12, 0.865),rgb(121, 215, 140),rgb(49, 48, 48));
+    background-image: linear-gradient(-45deg,rgb(62, 193, 88),rgba(13, 12, 12, 0.865),rgb(18, 145, 43),rgb(22, 22, 22));
 }
 #aja_colorido{
-    background-image: linear-gradient(-45deg,rgb(47, 148, 185),rgba(89, 208, 160, 0.927),rgb(149, 220, 246),rgb(23, 106, 31));
+    background-image: linear-gradient(-45deg,rgb(48, 157, 196),rgba(58, 158, 118, 0.927),rgb(185, 227, 243),rgb(4, 86, 12));
 }
 #json_colorido{
-     background-image: linear-gradient(-45deg,rgb(19, 30, 35),rgba(63, 64, 64, 0.961));
+     background-image: linear-gradient(45deg,rgb(19, 30, 35),rgba(244, 248, 248, 0.961),rgb(141, 140, 140));
 }
 #git_colorido{
-    background-image: linear-gradient(-45deg,rgb(95, 107, 112),rgba(18, 19, 19, 0.865),rgb(95, 107, 112),rgb(18, 22, 24));
+    background-image: linear-gradient(-45deg,rgb(95, 107, 112),rgba(18, 19, 19, 0.865),rgb(95, 107, 112),rgb(18, 22, 24),white);
 }
 #gli_colorido{
      background-image: linear-gradient(-45deg, rgb(69, 118, 141),rgba(174, 92, 180, 0.865),rgb(106, 178, 211),rgb(215, 57, 154));
 }
 #inf_colorido{
-    background-image: linear-gradient(rgb(85, 17, 114),rgba(218, 191, 230, 0.865),rgb(85, 17, 114),rgb(230, 190, 247)); 
+    background-image: linear-gradient(45deg,rgb(85, 17, 114),rgba(218, 191, 230, 0.865),rgb(85, 17, 114),rgb(230, 190, 247)); 
 }
 #fig_colorido{
-      background-image: linear-gradient(rgb(132, 230, 131),rgba(227, 72, 155, 0.865),rgb(132, 230, 131),rgb(153, 48, 81)); 
+      background-image: linear-gradient(-45deg,rgb(132, 230, 131),rgba(227, 72, 155, 0.865),rgb(132, 230, 131),rgb(153, 48, 81)); 
 }
 .colorido {
-  padding: 2.4px;
+  padding: 6px;
   border-radius: 15px;
   width: 20%;
   min-width: 220px;
   margin: 1em;
-     background-size: 400% 400%;
-	animation: colors 8s ease infinite;
-
+  background-size: 400% 400%;
+  animation: colors 6s ease infinite;
 }
 @keyframes colors{
     0%{
@@ -143,6 +139,8 @@ main{
 .tech-card {
   background: linear-gradient(135deg, #ffffff, #f6f5f5);
   border-radius: 11px; 
+  outline: 3px solid white;
+  outline-offset: 2px;
   padding: 3%;
   width: 100%;
   height: 100%;
@@ -201,6 +199,9 @@ hr{
     color: black;
     width: 20%;
 }
+#projetos{
+    background-image: linear-gradient(#e4e1d104,#e4e1d1b6,#e4e1d104);
+}
 #projetos_principais{
     width: 100%;
 }
@@ -219,14 +220,17 @@ hr{
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.968);
+    border: 2px solid black;
     position: relative;
+    border-radius: 10px;
 }
 .projeto img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     display: block;
-   transition: 0.3s ease;
+    border-radius: 10px;
+    transition: 0.3s ease;
 }
 .projeto .texto{
     position: absolute;
@@ -234,25 +238,28 @@ hr{
     height: 100%;
     z-index: 2;
     color: rgba(239, 237, 237, 0.918);
-    background-color: rgba(22, 22, 22, 0.967);
+    background-color:rgba(0, 0, 0, 0.838);
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     opacity: 0;
     transition: opacity 0.4s ease;
     padding: 1em;
+    border-radius: 10px;
+
 }
 .texto button{
-    width: 150px;
     font-size: 1.1em;
 }
 .texto p{
-    width: 80%;
+    width: 90%;
     font-size: 1.1em;
 }
 .texto h3{
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 .projeto:hover .texto{
     opacity: 1;
@@ -376,10 +383,11 @@ hr{
     -webkit-text-fill-color: transparent; 
 }
 .back-azul{
-    background-color:#777BB4;
+    background-color:#7b80bd;
     border-radius: 50%;
     width: 60px;
     height: 34px;
+    text-align: center;
     padding: 1px 1px 6px 1px;
 }
 .icone-boot{
@@ -408,6 +416,5 @@ hr{
     .texto p{
     width: 99%;
     font-size: 1.1em;
-}
-    
+    }
 }
