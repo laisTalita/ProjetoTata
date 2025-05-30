@@ -405,7 +405,7 @@ hr{
 }
 @media (max-width:400px) {
     #skillsRadar{
-        width: 100%;
+        width: 80%;
     }
     .texto p{
     width: 99%;
