@@ -37,7 +37,7 @@ function mudarGrafico() {
       const data = {
         labels: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL', 'React', 'Node.js', 'Ajax', 'Json'],
         datasets: [{
-          data: [85, 82, 65, 80, 75, 90, 20, 35, 50, 82],
+          data: [85, 82, 65, 80, 75, 76, 35, 40, 70, 82],
           fill: false,
           borderColor: 'rgb(151, 9, 9)',
           pointBackgroundColor: 'rgb(142, 27, 21)',

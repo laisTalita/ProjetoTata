@@ -117,7 +117,7 @@ main{
       background-image: linear-gradient(-45deg,rgb(132, 230, 131),rgba(227, 72, 155, 0.865),rgb(132, 230, 131),rgb(153, 48, 81)); 
 }
 .colorido {
-  padding: 6px;
+  padding: 10px;
   border-radius: 15px;
   width: 20%;
   min-width: 220px;
@@ -139,9 +139,9 @@ main{
 .tech-card {
   background: linear-gradient(135deg, #ffffff, #f6f5f5);
   border-radius: 11px; 
-  outline: 3px solid white;
-  outline-offset: 2px;
-  padding: 3%;
+  outline: 2px solid white;
+  outline-offset: 4px;
+  padding: 4%;
   width: 100%;
   height: 100%;
   box-sizing: border-box; 
@@ -192,6 +192,7 @@ main{
 .tech-body .nivel {
   font-weight: 300;
   color: #555555fa;
+
 }
 
 hr{
